@@ -16,3 +16,29 @@ jobs:
           node-version: '20'
       - run: node --check skills/paper-to-html-v2.4/assets/reader-components/reader.js
       - run: python -X utf8 -m unittest discover -s skills/paper-to-html-v2.4/scripts -p "test_*.py"
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install browser test runtime
+        run: |
+          npm install --no-save --prefix "$RUNNER_TEMP/paper-browser" playwright@1.62.1
+          "$RUNNER_TEMP/paper-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Keyboard and component regression
+        env:
+          PLAYWRIGHT_MODULE: ${{ runner.temp }}/paper-browser/node_modules/playwright
+        run: node skills/paper-to-html-v2.4/scripts/test_reader_accessibility.cjs
+      - name: Real public-reader interaction regression
+        env:
+          PLAYWRIGHT_MODULE: ${{ runner.temp }}/paper-browser/node_modules/playwright
+          PREVIEW_REPORT: browser-report/public-preview.json
+        run: node scripts/test_public_preview.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-preview-browser-report
+          path: browser-report/
