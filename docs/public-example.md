@@ -14,6 +14,8 @@
 
 GitHub Actions 新增浏览器 job：固定 Playwright 版本并安装 Chromium，运行合成页面键盘检查和公开案例交互检查。检查图片加载、所有面板图文对应、三种视口、内部链接、知识卡查阅返回、标黄/撤销/刷新、图片预览和静态笔记边界。结果上传为 artifact。
 
+首次远端执行已通过：[运行记录](https://github.com/BerryIcey/paper-to-html/actions/runs/39423726932)。同次运行的 Windows、Linux 组件检查也通过。后续状态以对应提交的 Actions 为准。
+
 本机还可指定已有 Edge：
 
 ```sh
