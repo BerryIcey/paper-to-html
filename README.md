@@ -4,9 +4,9 @@
 
 ![paper-to-html — 阅读、理解、留下问题](docs/images/cover.svg)
 
-### 把论文变成一份能跟着读的网页
+### 把读懂的内容留下，下次不用从头问起
 
-逐图理解证据，查清陌生概念，跟上全文论证。
+解释留在论文旁，问题和笔记随着阅读积累。
 
 [![推荐 v2.4](https://img.shields.io/badge/推荐版本-v2.4-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.4)
 [![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml)
@@ -17,6 +17,16 @@
 </div>
 
 **供 Codex 使用的中文论文共读 Skill 与阅读组件。** 把连续原文、完整翻译、读图解释、知识卡和论证链放在同一网页，当前重点是生物医学实验论文。制作需要能读取 PDF 的助手；生成的静态阅读页可离线打开，项目笔记需要本地服务。
+
+## 今天问明白，下一次也找得到
+
+读论文时，和 AI 来回聊了很多轮，当时似乎懂了。隔一段时间再看，却忘了那段推理：要么在很长的对话里翻找，要么把同一个问题重新问一遍。
+
+**paper-to-html 想省下的，就是这部分重复。** 先把论文整理成带原文、翻译、图解和知识卡的网页；读到不懂的地方，就在对应内容旁留下随手记。下一轮让助手处理疑问，按需补充网页讲解并保留处理回复，逐渐积累属于自己的问题、理解与阅读笔记。
+
+![从反复问答，到保留卡点、处理回复与个人笔记的可重读论文网页](docs/images/reading-memory.svg)
+
+**再次打开时，不只重看论文，也能回看“当时卡在哪里、后来怎样理解”。** 不用每次都从空白对话重新开始。随手记需通过本地服务保存，下一轮由助手处理；网页不会即时自动回答或自行更新。
 
 ## 先看阅读体验
 

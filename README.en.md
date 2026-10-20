@@ -4,9 +4,9 @@
 
 ![paper-to-html — Read, understand, keep your questions](docs/images/cover.svg)
 
-### A paper walkthrough you can follow
+### A paper guide that keeps what you learned
 
-Read each figure. Clarify unfamiliar concepts. Follow the whole argument.
+Keep explanations beside the paper. Return to your questions, not a buried chat thread.
 
 [![Recommended v2.4](https://img.shields.io/badge/Recommended-v2.4-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.4)
 [![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml)
@@ -17,6 +17,16 @@ Read each figure. Clarify unfamiliar concepts. Follow the whole argument.
 </div>
 
 **A Codex Skill for source-grounded, Chinese-first paper co-reading.** It combines continuous text and translation, figure walkthroughs, concept cards and an argument chain. Current focus: biomedical experimental papers. Creating a guide needs an assistant with PDF access; the finished static reader works offline. Project notes need a local service.
+
+## Understand it once. Keep it for the next reading.
+
+A good AI explanation helps in the moment. Weeks later, you may forget the reasoning, lose the right message in a long thread, and ask the same question again.
+
+**paper-to-html brings those explanations back to the paper.** Start with a readable guide, note what still confuses you, ask the assistant to address it in a later session, and retain the responses and any requested guide updates. Your paper project gradually holds your own questions, clarifications and reading notes—so reopening it also brings back where you got stuck and what helped.
+
+![From repeated chat questions to a revisitable paper guide with personal questions and notes](docs/images/en-reading-memory.svg)
+
+The goal is fewer repeated explanations and less searching through chat history. It still supports ongoing questions: project notes save through the local service, and the assistant handles them in a later session; the webpage does not answer or update itself instantly.
 
 ## See the reader
 

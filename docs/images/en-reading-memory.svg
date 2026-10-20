@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="830" viewBox="0 0 1200 830" role="img" aria-labelledby="title desc">
+<title id="title">Keep your understanding beside the paper</title><desc id="desc">Repeated chat questions become a revisitable paper guide, with saved questions and later assistant updates.</desc>
+<rect width="1200" height="830" rx="24" fill="#f7f7f2"/>
+<g font-family="Segoe UI,Microsoft YaHei,PingFang SC,Arial,sans-serif">
+<text x="42" y="43" font-size="15" font-weight="600" fill="#547665">PAPER-TO-HTML  /  READ · ASK · KEEP · REVISIT</text>
+<text x="42" y="99" font-size="34" font-weight="700" fill="#253e35">Keep your understanding beside the paper</text>
+<text x="42" y="139" font-size="22" font-weight="400" fill="#617369">Read again without starting the conversation over.</text>
+<rect x="40" y="177" width="342" height="468" rx="16" fill="#efeee9" stroke="#dcded7"/>
+<text x="64" y="215" font-size="24" font-weight="700" fill="#253e35">A familiar reading loop</text>
+<rect x="61" y="239" width="300" height="89" rx="12" fill="#ffffff" stroke="#e0e2db"/>
+<text x="78" y="267" font-size="17" font-weight="600" fill="#7c7b70">First read</text>
+<text x="78" y="301" font-size="18" font-weight="400" fill="#253e35">“What does this figure mean?”</text>
+<rect x="61" y="351" width="300" height="89" rx="12" fill="#ffffff" stroke="#e0e2db"/>
+<text x="78" y="379" font-size="17" font-weight="600" fill="#7c7b70">Later</text>
+<text x="78" y="413" font-size="18" font-weight="400" fill="#253e35">“Where was that explanation?”</text>
+<rect x="61" y="463" width="300" height="89" rx="12" fill="#ffffff" stroke="#e0e2db"/>
+<text x="78" y="491" font-size="17" font-weight="600" fill="#7c7b70">Read again</text>
+<text x="78" y="525" font-size="18" font-weight="400" fill="#253e35">“Could you explain it again?”</text>
+<text x="64" y="617" font-size="18" font-weight="400" fill="#81796a">The answer gets buried in chat.</text>
+<rect x="408" y="177" width="752" height="468" rx="16" fill="#ffffff" stroke="#c7d8ca"/>
+<rect x="408" y="177" width="752" height="55" rx="16" fill="#2e604d" stroke="none"/>
+<rect x="408" y="204" width="752" height="28" rx="0" fill="#2e604d" stroke="none"/>
+<circle cx="432" cy="204" r="4" fill="#c0d8c8"/>
+<circle cx="451" cy="204" r="4" fill="#c0d8c8"/>
+<circle cx="470" cy="204" r="4" fill="#c0d8c8"/>
+<text x="491" y="211" font-size="17" font-weight="600" fill="#ffffff">YOUR PAPER · YOUR UNDERSTANDING</text>
+<rect x="431" y="248" width="705" height="80" rx="10" fill="#f8faf6" stroke="none"/>
+<rect x="447" y="267" width="42" height="42" rx="10" fill="#dceadd" stroke="none"/>
+<text x="455" y="295" font-size="20" font-weight="700" fill="#2e604d">01</text>
+<text x="507" y="278" font-size="22" font-weight="600" fill="#253e35">Build the guide</text>
+<text x="507" y="307" font-size="17" font-weight="400" fill="#617369">Text, translation, figures and concepts</text>
+<rect x="431" y="340" width="705" height="80" rx="10" fill="#f8faf6" stroke="none"/>
+<rect x="447" y="359" width="42" height="42" rx="10" fill="#dceadd" stroke="none"/>
+<text x="455" y="387" font-size="20" font-weight="700" fill="#2e604d">02</text>
+<text x="507" y="370" font-size="22" font-weight="600" fill="#253e35">Keep the question</text>
+<text x="507" y="399" font-size="17" font-weight="400" fill="#617369">Record where you got stuck while reading</text>
+<rect x="431" y="432" width="705" height="80" rx="10" fill="#f8faf6" stroke="none"/>
+<rect x="447" y="451" width="42" height="42" rx="10" fill="#dceadd" stroke="none"/>
+<text x="455" y="479" font-size="20" font-weight="700" fill="#2e604d">03</text>
+<text x="507" y="462" font-size="22" font-weight="600" fill="#253e35">Resolve and refine</text>
+<text x="507" y="491" font-size="17" font-weight="400" fill="#617369">Ask the assistant in a later session; update the guide</text>
+<rect x="431" y="524" width="705" height="80" rx="10" fill="#f0f5ee" stroke="none"/>
+<rect x="447" y="543" width="42" height="42" rx="10" fill="#dceadd" stroke="none"/>
+<text x="455" y="571" font-size="20" font-weight="700" fill="#2e604d">04</text>
+<text x="507" y="554" font-size="22" font-weight="600" fill="#253e35">Return with context</text>
+<text x="507" y="583" font-size="17" font-weight="400" fill="#617369">Revisit your questions, responses and notes</text>
+<rect x="40" y="671" width="1120" height="115" rx="16" fill="#e4eee2" stroke="none"/>
+<text x="65" y="712" font-size="25" font-weight="700" fill="#253e35">Less chat archaeology. More understanding you can return to.</text>
+<text x="65" y="750" font-size="18" font-weight="400" fill="#54705e">Project notes use a local service. Assistant replies and guide updates happen in a later session.</text>
+</g></svg>
