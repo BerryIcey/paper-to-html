@@ -1,0 +1,5 @@
+# Public payload hashes must match on Windows, Linux and Pages.
+site/*.html text eol=lf
+site/*.json text eol=lf
+demo/*.html text eol=lf
+demo/en/*.html text eol=lf

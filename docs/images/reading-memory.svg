@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="830" viewBox="0 0 1200 830" role="img" aria-labelledby="title desc">
+<title id="title">把理解留在论文旁，而不是散在对话里</title><desc id="desc">将反复问答整理为可重读的论文网页，保存卡点，下一轮处理问题，持续积累自己的阅读笔记。</desc>
+<rect width="1200" height="830" rx="24" fill="#f7f7f2"/>
+<g font-family="Segoe UI,Microsoft YaHei,PingFang SC,Arial,sans-serif">
+<text x="42" y="43" font-size="15" font-weight="600" fill="#547665">PAPER-TO-HTML  /  READ · ASK · KEEP · REVISIT</text>
+<text x="42" y="99" font-size="37" font-weight="700" fill="#253e35">把理解留在论文旁，而不是散在对话里</text>
+<text x="42" y="139" font-size="22" font-weight="400" fill="#617369">读完会忘，再看会问。让每次想通的地方，都有处可回。</text>
+<rect x="40" y="177" width="342" height="468" rx="16" fill="#efeee9" stroke="#dcded7"/>
+<text x="64" y="215" font-size="24" font-weight="700" fill="#253e35">熟悉的阅读循环</text>
+<rect x="61" y="239" width="300" height="89" rx="12" fill="#ffffff" stroke="#e0e2db"/>
+<text x="78" y="267" font-size="17" font-weight="600" fill="#7c7b70">初读</text>
+<text x="78" y="301" font-size="21" font-weight="400" fill="#253e35">“这张图到底说明什么？”</text>
+<rect x="61" y="351" width="300" height="89" rx="12" fill="#ffffff" stroke="#e0e2db"/>
+<text x="78" y="379" font-size="17" font-weight="600" fill="#7c7b70">隔一段时间</text>
+<text x="78" y="413" font-size="21" font-weight="400" fill="#253e35">“当时是怎么解释的？”</text>
+<rect x="61" y="463" width="300" height="89" rx="12" fill="#ffffff" stroke="#e0e2db"/>
+<text x="78" y="491" font-size="17" font-weight="600" fill="#7c7b70">再次翻看</text>
+<text x="78" y="525" font-size="21" font-weight="400" fill="#253e35">“算了，再问一遍吧……”</text>
+<text x="64" y="617" font-size="18" font-weight="400" fill="#81796a">解释找过，问题还会重新问。</text>
+<rect x="408" y="177" width="752" height="468" rx="16" fill="#ffffff" stroke="#c7d8ca"/>
+<rect x="408" y="177" width="752" height="55" rx="16" fill="#2e604d" stroke="none"/>
+<rect x="408" y="204" width="752" height="28" rx="0" fill="#2e604d" stroke="none"/>
+<circle cx="432" cy="204" r="4" fill="#c0d8c8"/>
+<circle cx="451" cy="204" r="4" fill="#c0d8c8"/>
+<circle cx="470" cy="204" r="4" fill="#c0d8c8"/>
+<text x="491" y="211" font-size="17" font-weight="600" fill="#ffffff">论文网页 · 逐渐积累的个人理解</text>
+<rect x="431" y="248" width="705" height="80" rx="10" fill="#f8faf6" stroke="none"/>
+<rect x="447" y="267" width="42" height="42" rx="10" fill="#dceadd" stroke="none"/>
+<text x="455" y="295" font-size="20" font-weight="700" fill="#2e604d">01</text>
+<text x="507" y="278" font-size="22" font-weight="600" fill="#253e35">把论文做成网页</text>
+<text x="507" y="307" font-size="19" font-weight="400" fill="#617369">原文、译文、图解和知识卡，放在一起</text>
+<rect x="431" y="340" width="705" height="80" rx="10" fill="#f8faf6" stroke="none"/>
+<rect x="447" y="359" width="42" height="42" rx="10" fill="#dceadd" stroke="none"/>
+<text x="455" y="387" font-size="20" font-weight="700" fill="#2e604d">02</text>
+<text x="507" y="370" font-size="22" font-weight="600" fill="#253e35">边读边留下卡点</text>
+<text x="507" y="399" font-size="19" font-weight="400" fill="#617369">“这里没懂”——把疑问记在对应内容旁</text>
+<rect x="431" y="432" width="705" height="80" rx="10" fill="#f8faf6" stroke="none"/>
+<rect x="447" y="451" width="42" height="42" rx="10" fill="#dceadd" stroke="none"/>
+<text x="455" y="479" font-size="20" font-weight="700" fill="#2e604d">03</text>
+<text x="507" y="462" font-size="22" font-weight="600" fill="#253e35">下轮处理，再补充理解</text>
+<text x="507" y="491" font-size="19" font-weight="400" fill="#617369">让助手解释问题，按需更新讲解并保留回复</text>
+<rect x="431" y="524" width="705" height="80" rx="10" fill="#f0f5ee" stroke="none"/>
+<rect x="447" y="543" width="42" height="42" rx="10" fill="#dceadd" stroke="none"/>
+<text x="455" y="571" font-size="20" font-weight="700" fill="#2e604d">04</text>
+<text x="507" y="554" font-size="22" font-weight="600" fill="#253e35">重读时，知道自己曾卡在哪里</text>
+<text x="507" y="583" font-size="19" font-weight="400" fill="#617369">回看问题、处理回复与自己的阅读笔记</text>
+<rect x="40" y="671" width="1120" height="115" rx="16" fill="#e4eee2" stroke="none"/>
+<text x="65" y="712" font-size="29" font-weight="700" fill="#253e35">少翻一次聊天记录，多留下一层属于自己的理解。</text>
+<text x="65" y="750" font-size="18" font-weight="400" fill="#54705e">随手记通过本地服务保存；下一轮由助手处理，不是网页即时自动问答。</text>
+</g></svg>

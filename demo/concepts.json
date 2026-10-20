@@ -1,0 +1,11 @@
+{
+  "domain": "nonbiology",
+  "legend": [
+    {
+      "id": "method",
+      "label": "比较方法",
+      "color": "#ffedc5"
+    }
+  ],
+  "concepts": []
+}
