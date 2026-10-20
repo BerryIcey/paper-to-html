@@ -6,7 +6,7 @@
 
 The full folder should contain `~/.codex/skills/paper-to-html-v2.4/SKILL.md` plus `agents/`, `references/`, `scripts/` and `assets/`. Copy the complete folder without an extra nesting level. Back up an existing installation outside discovery directories; confirm discovery on the next turn or in a new chat.
 
-Dotted version names retain the existing convention. Generic validators may reject them. Other agents are not systematically validated; accepting SKILL.md does not prove execution compatibility.
+Dotted version names retain the existing convention. Generic validators may reject them. Only Codex has been tested; other agents have not been tested. Accepting SKILL.md does not prove execution compatibility.
 
 ## Dependencies
 
@@ -20,7 +20,7 @@ Keep the demo terminal running and stop it with Ctrl+C. If the port is occupied,
 
 ## Time and cost
 
-No standardized runtime or token/cost benchmark has been published. Page count, figures, PDF quality, missing sources and model choice affect the work. Source-checked guides are not promised as one-click conversion.
+A maintainer-reported previous run took about 50 minutes and used about 15% of a Plus account weekly allowance; see the [single-run record](usage-observation.md). No standardized runtime or token/cost benchmark has been published. Page count, figures, PDF quality, missing sources and model choice affect the work. Source-checked guides are not promised as one-click conversion.
 
 ## Verify a release
 

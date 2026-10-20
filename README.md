@@ -12,11 +12,11 @@
 [![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml)
 [![MIT](https://img.shields.io/badge/License-MIT-657b72?style=flat-square)](LICENSE)
 
-**[下载 v2.4](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip) · [查看技能](https://github.com/BerryIcey/paper-to-html/blob/v2.4/skills/paper-to-html-v2.4/SKILL.md) · [更新说明](docs/v2.4-changes.md) · [快速开始](#三步开始) · [反馈问题](https://github.com/BerryIcey/paper-to-html/issues)**
+**[在线阅读真实案例](https://berryicey.github.io/paper-to-html/) · [下载 v2.4](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip) · [查看技能](https://github.com/BerryIcey/paper-to-html/blob/v2.4/skills/paper-to-html-v2.4/SKILL.md) · [更新说明](docs/v2.4-changes.md) · [快速开始](#三步开始) · [反馈问题](https://github.com/BerryIcey/paper-to-html/issues)**
 
 </div>
 
-**供 Codex 使用的中文论文共读 Skill 与阅读组件。** 把连续原文、完整翻译、读图解释、知识卡和论证链放在同一网页，当前重点是生物医学实验论文。制作需要能读取 PDF 的助手；生成的静态阅读页可离线打开，项目笔记需要本地服务。
+**供 Codex 使用的中文论文共读 Skill 与阅读组件。仅在 Codex 测试，其他 Agent 尚未测试。** 把连续原文、完整翻译、读图解释、知识卡和论证链放在同一网页，当前重点是生物医学实验论文。制作需要能读取 PDF 的助手；生成的静态阅读页可离线打开，项目笔记需要本地服务。
 
 ## 今天问明白，下一次也找得到
 
@@ -32,7 +32,15 @@
 
 ![原创模拟演示的实际界面截图](docs/images/demo-preview-20261020.png)
 
-*实际界面截图，内容为原创模拟文字和图表；不是真实论文成果，也不是 v2.4 全部能力的验收样例。*[下载演示 HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/paper-reading.html) 后保存，用浏览器打开。当前没有在线托管演示。
+*实际界面截图，内容为原创模拟文字和图表；不是真实论文成果，也不是 v2.4 全部能力的验收样例。*[下载演示 HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/paper-reading.html) 后保存，用浏览器打开。也可以直接[在线阅读真实论文案例](https://berryicey.github.io/paper-to-html/)；上图仍是原创模拟界面的截图。
+
+## 直接打开一篇做好的论文
+
+**[在线阅读 Mulet-Lazaro 2024 共读网页 →](https://berryicey.github.io/paper-to-html/)**
+
+直接复用已有中文成品，保留原文、翻译、读图解释、47 张知识卡和论证链，不另外制作一份简化宣传页。它不是 v2.4 从零生成的性能基准。原论文采用 CC BY 4.0，[署名和改编说明](THIRD_PARTY_NOTICES.md)已附上；不公开私人笔记队列与附件。访客可读图查卡、标黄并保留当前浏览器草稿，静态站不能将笔记提交到作者项目。
+
+一次既往制作，**据维护者提供的使用记录**，耗时约 **50 分钟**，使用了 **Plus 账户周额度约 15%**。这是单次经验，不是平均值、固定费用或完成时长承诺，也未指定为当前公开案例的成本。[记录与边界](docs/usage-observation.md)。
 
 ## 三步开始
 
@@ -131,7 +139,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 
 - **制作环境：** 支持 Skill 的助手和 PDF 读取能力；组件与服务使用 Python 标准库，PDF 裁图需要 PyMuPDF，脚本语法检查使用 Node.js；可选浏览器回归需要 Playwright 和已安装浏览器。
 - **引用显示：** 原文、译文、图注与讲解去除纯文献引用编号和角标；保留图号、单位、公式/化学上标等科学内容，来源留在台账和原论文。
-- **核对范围：** 翻译、图例、数值与推理需要逐项核对。测试通过不证明解释全部正确，也不证明所有领域都已验证。
+- **核对范围：** 翻译、图例、数值与推理需要逐项核对。测试通过不证明解释全部正确，也不证明所有领域都已验证。Agent 仅测试 Codex，其他 Agent 尚未测试。
 - **保存边界：** 正文可离线阅读；项目笔记依赖本地服务。目前没有断线自动补存、跨设备同步或即时问答。
 - **设备访问：** `127.0.0.1` 只供本机使用。手机能读离线文件，不代表能连接电脑的本地地址提交笔记。
 - **后台与历史：** 正式项目可保留 0/1/2 个历史备份，最新版另计；Windows 后台方案与其他系统不同，重启存活需另行验证。
@@ -156,7 +164,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 
 当前关注：专门术语漏选与基础知识过选、长论文后半部分讲解质量、触控操作，以及不同论证方式的迁移。请勿上传私人笔记、凭据或未经许可的论文全文。
 
-代码与通用说明使用 [MIT 许可](LICENSE)。论文及第三方图片沿用原有权利条件，仓库不分发用户论文。
+代码与通用说明使用 [MIT 许可](LICENSE)。论文及第三方图片沿用原有权利条件，公开案例按其独立许可分享，详见[第三方署名](THIRD_PARTY_NOTICES.md)；不公开私人笔记。
 
 有帮助的话，欢迎 **Star** 收藏，方便回来找版本。更有价值的反馈是：哪一段、哪张图、哪个推理还讲不清楚。
 

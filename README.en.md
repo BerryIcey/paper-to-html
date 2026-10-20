@@ -12,11 +12,11 @@ Keep explanations beside the paper. Return to your questions, not a buried chat 
 [![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml)
 [![MIT](https://img.shields.io/badge/License-MIT-657b72?style=flat-square)](LICENSE)
 
-**[Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip) · [Read the Skill](https://github.com/BerryIcey/paper-to-html/blob/v2.4/skills/paper-to-html-v2.4/SKILL.md) · [Release notes](docs/v2.4-changes.en.md) · [Quick start](#start-in-three-steps) · [Report an issue](https://github.com/BerryIcey/paper-to-html/issues)**
+**[Live real-paper example](https://berryicey.github.io/paper-to-html/) · [Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip) · [Read the Skill](https://github.com/BerryIcey/paper-to-html/blob/v2.4/skills/paper-to-html-v2.4/SKILL.md) · [Release notes](docs/v2.4-changes.en.md) · [Quick start](#start-in-three-steps) · [Report an issue](https://github.com/BerryIcey/paper-to-html/issues)**
 
 </div>
 
-**A Codex Skill for source-grounded, Chinese-first paper co-reading.** It combines continuous text and translation, figure walkthroughs, concept cards and an argument chain. Current focus: biomedical experimental papers. Creating a guide needs an assistant with PDF access; the finished static reader works offline. Project notes need a local service.
+**A Codex Skill for source-grounded, Chinese-first paper co-reading. Only Codex has been tested; other agents have not been tested.** It combines continuous text and translation, figure walkthroughs, concept cards and an argument chain. Current focus: biomedical experimental papers. Creating a guide needs an assistant with PDF access; the finished static reader works offline. Project notes need a local service.
 
 ## Understand it once. Keep it for the next reading.
 
@@ -32,7 +32,15 @@ The goal is fewer repeated explanations and less searching through chat history.
 
 ![Actual interface of the original synthetic English demo](docs/images/en-demo-preview-20261020.png)
 
-*Actual interface screenshot, original synthetic text and invented charts; not a real-paper result or a complete v2.4 acceptance example.* [Download demo HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/en/paper-reading.html), save and open it in a browser. No hosted live demo yet.
+*Actual interface screenshot, original synthetic text and invented charts; not a real-paper result or a complete v2.4 acceptance example.* [Download demo HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/en/paper-reading.html), save and open it in a browser. [Open the real-paper preview](https://berryicey.github.io/paper-to-html/) instead of downloading. The screenshot above is the synthetic interface demo.
+
+## A real paper you can read now
+
+**[Open Mulet-Lazaro et al. 2024 →](https://berryicey.github.io/paper-to-html/)**
+
+This is an existing Chinese reading guide, reused as a public static preview: original text, translation, figure explanations, 47 concept cards and an argument chain. It is not a newly generated v2.4 benchmark. The source article is CC BY 4.0; [attribution and adaptations](THIRD_PARTY_NOTICES.md) are documented. No private note queue or attachments are published. Visitor drafts stay in the current browser; static hosting cannot save notes to the author's project.
+
+One previous run, **reported by the maintainer**, took about **50 minutes** and used about **15% of a Plus account's weekly allowance**. This is a single anecdotal record, not a typical cost, token count or guaranteed runtime; it is not identified as this hosted example's cost. [Record and limits](docs/usage-observation.md).
 
 ## Start in three steps
 
@@ -131,7 +139,7 @@ It is not a list of figure titles or a chain of unexplained terms. Parallel evid
 
 - **Environment:** A Skill-capable assistant with PDF access; Python for components and services, PyMuPDF for figure crops, and Node.js for JavaScript checks. Optional browser regression tests require Playwright and an installed browser.
 - **Citation display:** Remove bibliographic number markers from source text, translations, captions and explanations; preserve figure references, quantities, units and scientific superscripts. Keep provenance in the source ledger and original paper.
-- **Review:** Translations, labels, numbers and inferences need source checks. Passing tests does not establish scientific accuracy, comprehension or coverage of every discipline.
+- **Review:** Translations, labels, numbers and inferences need source checks. Passing tests does not establish scientific accuracy, comprehension or coverage of every discipline. Only Codex is tested as an agent; other agents are untested.
 - **Persistence:** Project notes need the local service. Automatic offline retry, cross-device sync and instant model responses are not implemented.
 - **Access:** `127.0.0.1` is local to each device. Offline reading on a phone does not connect it to a computer's loopback server.
 - **Versions and background services:** Projects can keep zero, one or two historical copies in addition to the latest. Background startup differs by operating system; actual restart survival requires separate verification.
@@ -156,7 +164,7 @@ Project notes require the local service. Browser drafts are a separate store, an
 
 Current priorities: missed specialist concepts, excessive basic explanations, consistent quality across long papers, touch interaction and different forms of argument. Do not upload private notes, credentials or paper full texts without permission.
 
-Code and general documentation use the [MIT license](LICENSE). Papers and third-party images retain their applicable rights; user papers are not distributed here.
+Code and general documentation use the [MIT license](LICENSE). Papers and third-party images retain their applicable rights; the public case is shared under its separate license; see [third-party notices](THIRD_PARTY_NOTICES.md). Private notes are not published.
 
 If useful, **Star** the repository to find it again. Specific feedback on an unclear object, comparison or inference helps improve it.
 
