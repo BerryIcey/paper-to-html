@@ -3,14 +3,15 @@
   "doi": "https://doi.org/10.1038/s41467-024-49811-y",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "source_snapshot_sha256": "c9f3ca1af6f0f4bbb5b93c97863b51120a3edc5b0901fd468da0e2a5cf5c602a",
-  "public_html_sha256": "b974e96822e27e463fed5ace6998484f31f91939a3d3f71040938ef61d663127",
+  "public_html_sha256": "4d41c62b170fbcb9eb09850a97b6134e4e1b95baeda205fc896de5a69f6a3282",
   "adaptations": [
     "Chinese translation and teaching commentary",
     "panel crops",
     "interactive reader",
     "public static-only note controls",
     "image assets externalized without reencoding",
-    "embedded PDF replaced by publisher link"
+    "embedded PDF replaced by publisher link",
+    "Enter-to-open preview removed by maintainer request"
   ],
   "images": {
     "ea3af055399e0ae12c221b4b.png": {

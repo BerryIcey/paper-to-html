@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: '20'
       - run: node --check skills/paper-to-html-v2.4/assets/reader-components/reader.js
+      - run: python -X utf8 scripts/validate_public_site.py
       - run: python -X utf8 -m unittest discover -s skills/paper-to-html-v2.4/scripts -p "test_*.py"
   browser:
     runs-on: ubuntu-latest
@@ -32,6 +33,10 @@ jobs:
         env:
           PLAYWRIGHT_MODULE: ${{ runner.temp }}/paper-browser/node_modules/playwright
         run: node skills/paper-to-html-v2.4/scripts/test_reader_accessibility.cjs
+      - name: Current bilingual demo regression
+        env:
+          PLAYWRIGHT_MODULE: ${{ runner.temp }}/paper-browser/node_modules/playwright
+        run: node scripts/test_demo.cjs
       - name: Real public-reader interaction regression
         env:
           PLAYWRIGHT_MODULE: ${{ runner.temp }}/paper-browser/node_modules/playwright
