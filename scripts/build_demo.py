@@ -38,7 +38,7 @@ for en in (False,True):
     s=re.sub(r'data-reader-panel="overview"', 'data-reader-panel="overview" data-reader-teaching-mode="detailed"',s)
     # Make generation idempotent.
     s=s.replace(' data-reader-teaching-mode="detailed" data-reader-teaching-mode="detailed"',' data-reader-teaching-mode="detailed"')
-    p.write_text(s,encoding='utf8')
+    p.write_text('\n'.join(line.rstrip() for line in s.splitlines())+'\n',encoding='utf8',newline='\n')
     manifest={'domain':'nonbiology','legend':[{'id':'method','label':'Comparison' if en else '比较方法','color':'#ffedc5'}],'concepts':[]}
     manifest_path=folder/'concepts.json';manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf8')
     subprocess.run([sys.executable,str(SKILL/'scripts/build_reader.py'),'--content',str(p),'--paper-id','original-demo-en-v24' if en else 'original-demo-zh-v24','--concepts',str(manifest_path),'--out',str(folder/'paper-reading.html')],check=True)
@@ -50,5 +50,5 @@ for en in (False,True):
         '基础 · 文章内容':'Article','知识区':'Knowledge','进阶内容':'Advanced','进阶知识区':'Assessment','读者总结与评议':'Reader assessment','工作稿 · 尚未正式编号':'Original demo · v2.4 components','版本设置':'Version settings','保留网站历史版本吗？':'Keep reader history?','保存方式':'Retention','请选择':'Choose','保存选择':'Save choice','稍后选择':'Later','项目版本设置':'Reader version settings','此文件是离线快照，备份方式以项目设置为准。':'This is an offline snapshot; retention belongs to the local project.','导出时的设置：':'Snapshot retention: ','尚未选择':'Not configured','请让助手在项目中配置备份方式；此文件不单独保存设置。':'Configure retention in the local project; this snapshot does not save settings.','文件预览不能保存提问':'File preview cannot save project notes','请通过当前项目阅读服务打开':'Open the local project service','已连接项目提问队列，下轮共读时读取处理。':'Connected to the local project queue for a later session.','已存入当前论文项目，下轮共读时助手读取；不会自动即时回复。':'Saved to the local paper project for a later session; no instant response.'}
         for a,b in sorted(translations.items(),key=lambda x:-len(x[0])):html=html.replace(a,b)
         html=html.replace('lang="zh-CN"','lang="en"',1)
-    output.write_text(html,encoding='utf8')
+    output.write_text('\n'.join(line.rstrip() for line in html.splitlines())+'\n',encoding='utf8',newline='\n')
 print('Both original demos rebuilt with current teaching, legend and interaction components.')
