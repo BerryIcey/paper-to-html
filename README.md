@@ -8,12 +8,14 @@
 
 逐图理解证据，查清陌生概念，跟上全文论证。
 
-[![推荐 v2.3](https://img.shields.io/badge/推荐版本-v2.3-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.3)
+[![推荐 v2.4](https://img.shields.io/badge/推荐版本-v2.4-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.4)
 [![MIT](https://img.shields.io/badge/License-MIT-657b72?style=flat-square)](LICENSE)
 
-**[下载 v2.3](https://github.com/BerryIcey/paper-to-html/releases/download/v2.3/paper-to-html-v2.3.zip) · [查看技能](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.3/SKILL.md) · [更新说明](docs/v2.3-changes.md) · [反馈问题](https://github.com/BerryIcey/paper-to-html/issues)**
+**[下载 v2.4](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip) · [查看技能](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.4/SKILL.md) · [更新说明](docs/v2.4-changes.md) · [反馈问题](https://github.com/BerryIcey/paper-to-html/issues)**
 
 </div>
+**v2.4 版本说明：经过 Darwin Skill 辅助优化；未新增功能，未进行额外人工优化。仅调整四项验收、整体走读、修复重测流程，包含独立评审和用户确认。**
+
 
 ## 三个核心阅读体验
 
@@ -59,14 +61,14 @@
 
 ### 1 · 安装推荐版
 
-下载 [paper-to-html-v2.3.zip](https://github.com/BerryIcey/paper-to-html/releases/download/v2.3/paper-to-html-v2.3.zip)，解压后将其中完整的 `paper-to-html-v2.3` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有旧安装时先在技能目录外备份。新开聊天确认技能可用。
+下载 [paper-to-html-v2.4.zip](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip)，解压后将其中完整的 `paper-to-html-v2.4` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有旧安装时先在技能目录外备份。新开聊天确认技能可用。
 
-下载包版本是 **v2.3**，技能调用名称是 **`$paper-to-html-v2.3`**。GitHub 更新不会自动更新电脑上的安装。
+下载包版本是 **v2.4**，技能调用名称是 **`$paper-to-html-v2.4`**。GitHub 更新不会自动更新电脑上的安装。
 
 ### 2 · 提供论文并调用
 
 ```text
-$paper-to-html-v2.3
+$paper-to-html-v2.4
 把这篇论文做成中文共读网页。
 完整翻译核心正文，逐面板解释全部主图，并讲清全文论证。
 ```
@@ -85,7 +87,7 @@ $paper-to-html-v2.3
 ```sh
 git clone https://github.com/BerryIcey/paper-to-html.git
 cd paper-to-html
-python skills/paper-to-html-v2.3/assets/reader-components/reading_server.py --root demo --port 18765
+python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --root demo --port 18765
 ```
 
 在同一台设备打开 `http://127.0.0.1:18765/paper-reading.html`。这只是临时演示服务；正式项目需要配置独立后台运行方式。
@@ -96,15 +98,16 @@ python skills/paper-to-html-v2.3/assets/reader-components/reading_server.py --ro
 
 | 版本 | 状态 | 内容与入口 |
 |---|---|---|
-| **v2.3** | **最新推荐 · 已发布** | [下载](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.3) · [更新报告](docs/v2.3-changes.md)：达尔文优化前本机基线：详略讲解、独立知识卡、领域图例与来源定位 |
+| **v2.4** | **最新推荐 · 已发布** | [下载](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.4) · [更新报告](docs/v2.4-changes.md)：Darwin 辅助优化验收流程；无新增功能、无额外人工优化 |
+| v2.3 | 优化前基线 · 保留原包 | [下载](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.3) · [更新报告](docs/v2.3-changes.md) |
 | v2.2 | 历史版 · 保留原包 | [下载](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.2) · [更新报告](docs/v2.2-changes.md) |
 | v2.1 | 历史版 · 保留原包 | [下载](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.1) · [更新报告](docs/v2.1-changes.md)：完整逐图讲解要求、自适应术语与知识卡、原文和图注查阅入口 |
 | v2.0.2 | 历史版 | [查看快照](https://github.com/BerryIcey/paper-to-html/tree/v2.0.2) · [早期变更](docs/v2-changes.md) |
 | v1.0.0 | 原始版 | [查看快照](https://github.com/BerryIcey/paper-to-html/tree/v1.0.0)，用于对照和回退 |
 
-**v2.3 已正式发布并设为推荐版。** v2.2 及更早版本的原始下载包和历史标签继续保留。Skill 版本与某篇论文网页自己的版本号分别管理。
+**v2.4 已正式发布并设为推荐版。** v2.2 及更早版本的原始下载包和历史标签继续保留。Skill 版本与某篇论文网页自己的版本号分别管理。
 
-[v2.3 校验文件](https://github.com/BerryIcey/paper-to-html/releases/download/v2.3/paper-to-html-v2.3.sha256) · [版本差异](https://github.com/BerryIcey/paper-to-html/compare/v2.1...v2.3)。不要混用不同版本的参考文件。[个人 Skill 库](https://github.com/BerryIcey/my-skills)保留项目入口。
+[v2.4 校验文件](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.sha256) · [版本差异](https://github.com/BerryIcey/paper-to-html/compare/v2.3...v2.4)。不要混用不同版本的参考文件。[个人 Skill 库](https://github.com/BerryIcey/my-skills)保留项目入口。
 
 ## 使用前需要知道
 

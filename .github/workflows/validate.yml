@@ -14,5 +14,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node --check skills/paper-to-html-v2.3/assets/reader-components/reader.js
-      - run: python -X utf8 -m unittest discover -s skills/paper-to-html-v2.3/scripts -p "test_*.py"
+      - run: node --check skills/paper-to-html-v2.4/assets/reader-components/reader.js
+      - run: python -X utf8 -m unittest discover -s skills/paper-to-html-v2.4/scripts -p "test_*.py"

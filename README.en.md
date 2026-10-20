@@ -8,12 +8,14 @@
 
 Read each figure. Clarify unfamiliar concepts. Follow the whole argument.
 
-[![Recommended v2.3](https://img.shields.io/badge/Recommended-v2.3-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.3)
+[![Recommended v2.4](https://img.shields.io/badge/Recommended-v2.4-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.4)
 [![MIT](https://img.shields.io/badge/License-MIT-657b72?style=flat-square)](LICENSE)
 
-**[Download v2.3](https://github.com/BerryIcey/paper-to-html/releases/download/v2.3/paper-to-html-v2.3.zip) · [Read the Skill](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.3/SKILL.md) · [Release notes](docs/v2.3-changes.en.md) · [Report an issue](https://github.com/BerryIcey/paper-to-html/issues)**
+**[Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip) · [Read the Skill](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.4/SKILL.md) · [Release notes](docs/v2.4-changes.en.md) · [Report an issue](https://github.com/BerryIcey/paper-to-html/issues)**
 
 </div>
+**v2.4: Darwin-assisted acceptance workflow only. No new features or additional manual optimization; independent review and user confirmation were included.**
+
 
 ## Three core reading experiences
 
@@ -59,14 +61,14 @@ It is not a list of figure titles or a chain of unexplained terms. Parallel evid
 
 ### 1 · Install the recommended release
 
-Download [paper-to-html-v2.3.zip](https://github.com/BerryIcey/paper-to-html/releases/download/v2.3/paper-to-html-v2.3.zip). Place its complete `paper-to-html-v2.3` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside that directory first, then start a new chat to confirm discovery.
+Download [paper-to-html-v2.4.zip](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip). Place its complete `paper-to-html-v2.4` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside that directory first, then start a new chat to confirm discovery.
 
-The release is **v2.3**; the invocation is **`$paper-to-html-v2.3`**. Repository updates do not automatically update installed copies.
+The release is **v2.4**; the invocation is **`$paper-to-html-v2.4`**. Repository updates do not automatically update installed copies.
 
 ### 2 · Provide a paper
 
 ```text
-$paper-to-html-v2.3
+$paper-to-html-v2.4
 Create a Chinese HTML walkthrough of this paper.
 Translate the core text, explain every main figure panel,
 and show how the paper's argument develops.
@@ -86,7 +88,7 @@ Requires Python, but no OpenAI API key:
 ```sh
 git clone https://github.com/BerryIcey/paper-to-html.git
 cd paper-to-html
-python skills/paper-to-html-v2.3/assets/reader-components/reading_server.py --root demo/en --port 18765
+python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --root demo/en --port 18765
 ```
 
 Open `http://127.0.0.1:18765/paper-reading.html` on the same machine. This is a temporary demo service; paper projects need a suitable independent background service.
@@ -97,14 +99,15 @@ Open `http://127.0.0.1:18765/paper-reading.html` on the same machine. This is a 
 
 | Version | Status | What it contains |
 |---|---|---|
-| **v2.3** | **Latest recommended · Released** | [Download](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.3) · [Change report](docs/v2.3-changes.en.md): undergraduate reader baseline, cross-domain reasoning, source checks, citation-marker removal and keyboard preview |
+| **v2.4** | **Latest recommended · Released** | [Download](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.4) · [Change report](docs/v2.4-changes.en.md): Darwin-assisted acceptance workflow; no new features or additional manual optimization |
+| v2.3 | Pre-optimization baseline | [Download](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.3) · [Notes](docs/v2.3-changes.en.md) |
 | v2.1 | Historical · Original package retained | [Download](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.1) · [Change report](docs/v2.1-changes.md): complete panel explanation requirements, adaptive concepts and knowledge cards, lookup links in source text and captions |
 | v2.0.2 | Historical | [Snapshot](https://github.com/BerryIcey/paper-to-html/tree/v2.0.2) · [Earlier changes](docs/v2-changes.md) |
 | v1.0.0 | Original | [Snapshot](https://github.com/BerryIcey/paper-to-html/tree/v1.0.0), retained for comparison and rollback |
 
-**v2.3 is now released and recommended.** The original v2.1 package and historical tag remain available. Skill versions and individual paper-reader versions are independent.
+**v2.4 is now released and recommended.** The original v2.1 package and historical tag remain available. Skill versions and individual paper-reader versions are independent.
 
-[v2.3 checksum](https://github.com/BerryIcey/paper-to-html/releases/download/v2.3/paper-to-html-v2.3.sha256) · [Compare versions](https://github.com/BerryIcey/paper-to-html/compare/v2.1...v2.3). Do not mix reference files from different versions.
+[v2.4 checksum](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.sha256) · [Compare versions](https://github.com/BerryIcey/paper-to-html/compare/v2.3...v2.4). Do not mix reference files from different versions.
 
 ## Practical limits
 
@@ -136,6 +139,3 @@ Project notes require the local service. Browser drafts are a separate store, an
 Current priorities: missed specialist concepts, excessive basic explanations, consistent quality across long papers, touch interaction and different forms of argument. Do not upload private notes, credentials or paper full texts without permission.
 
 Code and general documentation use the [MIT license](LICENSE). Papers and third-party images retain their applicable rights; user papers are not distributed here.
-
-
-v2.3 preserves the current installed skill before Darwin optimization. Previous [v2.2](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.2) remains available.
