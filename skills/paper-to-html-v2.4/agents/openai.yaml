@@ -1,0 +1,4 @@
+interface:
+  display_name: "文献共读网页 v2.4"
+  short_description: "以生物医学实验论文为主，按问题选择详略与跨图比较，适应你的中文共读"
+  default_prompt: "使用 $paper-to-html-v2.4 为我制作中文共读网页，先识别论证结构，再决定详讲、简讲及合讲，保留核心正文、原图、必要知识卡与文末评议。"
