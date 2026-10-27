@@ -13,11 +13,23 @@ document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');i
 back.onclick=()=>{const s=stack.pop();if(!s)return;s.figures.forEach(v=>{const f=document.getElementById(v.id);if(f){select(f,v.panel);v.scrolls.forEach(t=>{const el=document.getElementById(t.id);if(el)el.scrollTop=t.y})}});window.scrollTo(s.x,s.y);back.hidden=!stack.length};
 $$('[data-reader-card-group]').forEach(group=>{const heading=group.querySelector('h2,h3');let bar=group.querySelector('.reader-card-heading');if(!bar){bar=document.createElement('div');bar.className='reader-card-heading';if(heading){heading.before(bar);bar.append(heading)}else group.prepend(bar)}group.querySelectorAll('.reader-card-controls,[data-reader-cards-action]').forEach(e=>e.remove());const button=document.createElement('button');button.dataset.readerCardsToggle='';bar.append(button);const cards=()=>$$('details[data-reader-card]',group);function sync(){const all=cards().length>0&&cards().every(c=>c.open);button.textContent=all?'一键收起':'一键展开';button.setAttribute('aria-expanded',String(all))}button.onclick=()=>{const open=!cards().every(c=>c.open);cards().forEach(c=>c.open=open);sync()};cards().forEach(c=>c.addEventListener('toggle',sync));sync()});
 const pen=$('#reader-pen'),penTools=$('#reader-pen-tools'),legend=$('#reader-legend'),legendToggle=$('#reader-legend-toggle');let enabled=false;
-function penOpen(v){if(!v){enabled=false;$('#reader-pen-enable').setAttribute('aria-pressed','false');$('#reader-pen-enable').textContent='开启'};penTools.hidden=!v;pen.setAttribute('aria-expanded',String(v))}
+// A flex sidebar reserves a footer; expanding upward never displaces its toggles.
+const dock=document.querySelector('.reader-dock'),dockRow=dock.querySelector('.reader-dock-row');
+const sidebar=document.createElement('aside');sidebar.className='reader-sidebar';sidebar.setAttribute('aria-label','阅读目录与工具');
+const originalNav=$('#reader-nav');originalNav.before(sidebar);sidebar.append(originalNav,dock);
+dock.insertBefore(penTools,dockRow);dock.insertBefore(legend,dockRow);
+pen.setAttribute('aria-controls','reader-pen-tools');legendToggle.setAttribute('aria-controls','reader-legend');
+pen.innerHTML='<svg class="reader-dock-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m14 4 6 6-9 9H5v-6z"/><path d="m11 7 6 6M4 21h9"/></svg><span>荧光笔</span><span class="reader-dock-chevron" aria-hidden="true">⌃</span>';
+legendToggle.innerHTML='<svg class="reader-dock-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="5" height="5" rx="1"/><rect x="4" y="15" width="5" height="5" rx="1"/><path d="M13 6h7M13 17h7"/></svg><span>图例</span><span class="reader-dock-chevron" aria-hidden="true">⌃</span>';
+const penHeading=document.createElement('p');penHeading.className='reader-tool-heading';penHeading.textContent='文本标黄';
+
+const penActions=document.createElement('div');penActions.className='reader-tool-actions';penActions.append($('#reader-pen-enable'),$('#reader-undo'));penTools.append(penHeading,penActions);
+
+function penOpen(v){if(v)legendOpen(false);pen.setAttribute('aria-label',v?'收起荧光笔':'展开荧光笔');if(!v){enabled=false;$('#reader-pen-enable').setAttribute('aria-pressed','false');$('#reader-pen-enable').textContent='开启'};penTools.hidden=!v;pen.setAttribute('aria-expanded',String(v))}
 $('#reader-pen-enable').onclick=()=>{enabled=!enabled;$('#reader-pen-enable').setAttribute('aria-pressed',String(enabled));$('#reader-pen-enable').textContent=enabled?'关闭':'开启'};
 function colors(v){document.body.classList.toggle('reader-clean',!v);$('#reader-color-toggle').setAttribute('aria-pressed',String(v));$('#reader-color-toggle').textContent=v?'术语彩色：开启':'术语彩色：关闭';store.set('term-colors',v)}$('#reader-color-toggle').onclick=()=>colors(document.body.classList.contains('reader-clean'));colors(store.get('term-colors',true));
 pen.onclick=()=>penOpen(penTools.hidden);
-function legendOpen(v){legend.hidden=!v;legendToggle.setAttribute('aria-expanded',String(v));store.set('legend-open',v)}legendToggle.onclick=()=>legendOpen(legend.hidden);legendOpen(store.get('legend-open',true));
+function legendOpen(v){if(v)penOpen(false);legendToggle.setAttribute('aria-label',v?'收起图例':'展开图例');legend.hidden=!v;legendToggle.setAttribute('aria-expanded',String(v));store.set('legend-open',v)}legendToggle.onclick=()=>legendOpen(legend.hidden);legendOpen(false);
 let marks=store.get('marks',[]);const blocks=()=>$$('[data-highlight-block]');
 function textNodes(el){let w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),out=[];while(w.nextNode())out.push(w.currentNode);return out}
 function paint(b,lo,hi){let offset=0;for(const n of textNodes(b)){const l=n.length,start=Math.max(0,lo-offset),end=Math.min(l,hi-offset);offset+=l;if(end<=start)continue;const r=document.createRange();r.setStart(n,start);r.setEnd(n,end);const m=document.createElement('mark');m.className='reader-mark';r.surroundContents(m)}}

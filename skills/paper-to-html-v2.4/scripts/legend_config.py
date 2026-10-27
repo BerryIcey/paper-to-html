@@ -51,6 +51,6 @@ def render_legend(manifest,content):
  if used.categories-known-{'neutral'}:raise ValueError('colored terms must match the article legend')
  active=[e for e in entries if e['id'] in used.categories]
  markup='<div class="reader-legend-grid">'+''.join('<span class="term-'+e['id']+'">'+escape(e['label'])+'</span>'for e in active)+'</div>'
- css=''.join('.term-'+e['id']+'{background:'+e['color']+'}'for e in active)
+ css=''.join('.term-'+e['id']+'{background:'+e['color']+';--legend-swatch:'+e['color']+'}'for e in active)
  css+='.term-neutral{background:transparent}'
  return markup,css

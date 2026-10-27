@@ -2,16 +2,15 @@
   "paper": "Mulet-Lazaro et al. 2024",
   "doi": "https://doi.org/10.1038/s41467-024-49811-y",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "source_snapshot_sha256": "c9f3ca1af6f0f4bbb5b93c97863b51120a3edc5b0901fd468da0e2a5cf5c602a",
-  "public_html_sha256": "0155bcb6db88b513ac3fbdef4786dd6bf682ea8a39d997e7e4f581f408aca907",
+  "source_snapshot_sha256": "c309f82c4d577bfa96d8e403c8dae34a56d9fceeb53a0e7a22e9c2314cf20748",
+  "public_html_sha256": "a839aca4b32f97fbf609445e9109208fba869298c94d13e6939f52d436289b73",
   "adaptations": [
     "Chinese translation and teaching commentary",
     "panel crops",
     "interactive reader",
     "public static-only note controls",
     "image assets externalized without reencoding",
-    "embedded PDF replaced by publisher link",
-    "Enter-to-open preview removed by maintainer request"
+    "embedded PDF replaced by publisher link"
   ],
   "images": {
     "ea3af055399e0ae12c221b4b.png": {

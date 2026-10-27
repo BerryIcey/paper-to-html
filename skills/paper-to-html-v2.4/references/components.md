@@ -58,3 +58,6 @@ reader-url只填当前项目经验证的loopback入口，便于桌面版打开�
 模板与脚本实际行为须按acceptance.md验证，CSS生效或面板计数不等于操作通过或用户理解。
 
 随手记清单、章节跟随及筛选由固定reader.js/reader.css实现，装配时复用这两个资产，不为每篇论文重写侧栏。组件按paper-id保存草稿/筛选偏好；笔记正文和真实处理状态仍由独立服务的reading-notes.json持久保存。
+
+## 每个小图的数据来源与加工指标
+制作时核对原图注／Methods，为每个面板提供figure-data.json，再调用build_reader.py --figure-data figure-data.json。清单格式为`{"panels":{"fig1-a":{"source_locator":"对应原文/图注位置","layers":[{"label":"数据","data":"RNA-seq","processing":"归一化表达 → 热图"}]}}}`。label可省略；data、processing、source_locator不能空。图层复杂时添加多项，明确患者／外部参考；没有独立测量的设计图如实标注。清单是经来源核对的装配输入，不做自动来源推断；内部locator不重复展示在阅读区。figure_data.py将说明放入对应reader-image底部，不改原图/原文/译文。旧输入未传该选项仍兼容；新制作与本次维护的面板应完成覆盖核查。
