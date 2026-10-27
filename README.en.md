@@ -8,11 +8,11 @@
 
 Keep explanations beside the paper. Return to your questions, not a buried chat thread.
 
-[![Recommended v2.4](https://img.shields.io/badge/Recommended-v2.4-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.4)
+[![Recommended v2.4](https://img.shields.io/badge/Recommended-v2.4-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/latest)
 [![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml)
 [![MIT](https://img.shields.io/badge/License-MIT-657b72?style=flat-square)](LICENSE)
 
-**[Live real-paper example](https://berryicey.github.io/paper-to-html/) · [Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip) · [Read the Skill](https://github.com/BerryIcey/paper-to-html/blob/v2.4/skills/paper-to-html-v2.4/SKILL.md) · [Release notes](docs/v2.4-changes.en.md) · [Quick start](#start-in-three-steps) · [Report an issue](https://github.com/BerryIcey/paper-to-html/issues)**
+**[Live real-paper example](https://berryicey.github.io/paper-to-html/) · [Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip) · [Read the Skill](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.4/SKILL.md) · [Release notes](docs/latest-changes.en.md) · [Quick start](#start-in-three-steps) · [Report an issue](https://github.com/BerryIcey/paper-to-html/issues)**
 
 </div>
 
@@ -46,7 +46,7 @@ One previous run, **reported by the maintainer**, took about **50 minutes** and 
 
 ### 1 · Install the recommended release
 
-Download [paper-to-html-v2.4.zip](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip). Place its complete `paper-to-html-v2.4` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside that directory first, then start a new chat to confirm discovery.
+Download [paper-to-html-v2.4.zip](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip). Place its complete `paper-to-html-v2.4` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside that directory first, then start a new chat to confirm discovery.
 
 The release is **v2.4**; the invocation is **`$paper-to-html-v2.4`**. Repository updates do not automatically update installed copies.
 
@@ -133,7 +133,7 @@ It is not a list of figure titles or a chain of unexplained terms. Parallel evid
 
 **v2.4: Darwin-assisted acceptance workflow; no new features or additional manual optimization.** Independent paired review and user confirmation were included. This supports modest workflow clarity, not demonstrated gains in whole-paper accuracy or comprehension.
 
-[v2.4 notes](docs/v2.4-changes.en.md) · [Version history](docs/versions.en.md) · [Setup FAQ](docs/getting-started.en.md). v2.3 and older packages remain available. This presentation update does not alter the v2.4 archive.
+[v2.4 notes](docs/latest-changes.en.md) · [Version history](docs/versions.en.md) · [Setup FAQ](docs/getting-started.en.md). v2.3 and older packages remain available. This presentation update does not alter the v2.4 archive.
 
 ## Practical limits
 

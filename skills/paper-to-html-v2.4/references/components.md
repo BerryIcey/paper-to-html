@@ -56,3 +56,5 @@ reader-url只填当前项目经验证的loopback入口，便于桌面版打开�
 笔记仅通过同源/api/notes写项目；支持内容、截图、编辑历史、删除恢复和处理回复。断线草稿留浏览器，但当前组件没有自动补存/独立附件库功能，不能声称已做。移动端离线可读/切图，不等于能访问电脑loopback；跨设备项目提交须另行配置安全服务。
 本地API：/api/health快速检查；/source-paper.pdf限定原PDF；/api/settings读写备份数量；/api/notes读写笔记。Origin/Host及输入限制保持；不默认公开端口，不放模型API密钥。
 模板与脚本实际行为须按acceptance.md验证，CSS生效或面板计数不等于操作通过或用户理解。
+
+随手记清单、章节跟随及筛选由固定reader.js/reader.css实现，装配时复用这两个资产，不为每篇论文重写侧栏。组件按paper-id保存草稿/筛选偏好；笔记正文和真实处理状态仍由独立服务的reading-notes.json持久保存。

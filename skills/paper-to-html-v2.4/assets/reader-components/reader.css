@@ -35,3 +35,31 @@
 
 /* Simple biology identities; legacy classes remain compatible. */
 .term-method{background:#ffedc5}.term-gene-protein{background:#d9e8fa}.term-regulatory{background:#daeee5}.term-cell-type{background:#f3dfe2}.term-concept{background:#ede0f5}
+
+/* Reusable notes sidebar: status comes from the project queue, never a local checkbox. */
+.reader-notes{width:min(460px,96vw);padding:26px 22px;background:#f8faf6;box-sizing:border-box;border-left:1px solid #d6dfd3;box-shadow:-12px 0 40px #243a2918;scrollbar-gutter:stable}
+.reader-notes h2{font-size:24px;line-height:1.4;margin:0 0 8px;color:#234633}.reader-notes>.reader-status{line-height:1.65;color:#607565;font-size:13px}
+.reader-notes select,.reader-notes textarea{border:1px solid #cbd8c8;background:white;border-radius:10px;padding:10px 12px;font:inherit;box-sizing:border-box;line-height:1.65}
+.reader-notes textarea{min-height:160px;resize:vertical}.reader-notes button{border:1px solid #cbd8c8;background:white;border-radius:9px;padding:8px 12px;cursor:pointer;font:inherit;font-size:13px}.reader-notes button:disabled{opacity:.55;cursor:default}
+.reader-notes #reader-note-save{background:#315f47;color:white;border-color:#315f47;padding:10px 15px}.reader-note-follow{margin-top:-5px;font-size:12px!important}.reader-note-location-help{display:block;font-size:12px;color:#6b7a6e;line-height:1.7;margin:7px 0 12px}
+.reader-history-tools{margin-top:24px;padding-top:18px;border-top:1px solid #d7e1d2}.reader-history-tools h3{font-size:17px;margin:0}.reader-history-count{font-size:12px;color:#6a7e6e;margin:8px 0 12px}.reader-note-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.reader-note-filters button[aria-pressed=true]{background:#e0ebdc;border-color:#a9bfa3;color:#244d34;font-weight:600}
+details.reader-note{border:1px solid #d9e3d4;border-radius:11px;padding:0;margin:10px 0;background:white;white-space:normal;overflow:hidden}.reader-note>summary{display:flex;align-items:flex-start;gap:9px;list-style:none;padding:13px 12px;cursor:pointer}.reader-note>summary::-webkit-details-marker{display:none}
+.reader-note>summary input{margin:4px 0 0;accent-color:#387451;flex:0 0 auto;pointer-events:none;opacity:1}.reader-note-title{flex:1;min-width:0;font-size:13px;line-height:1.7;overflow-wrap:anywhere}.reader-note-badge{font-size:10px;line-height:1.8;padding:1px 6px;border-radius:20px;white-space:nowrap;background:#fff3d5;color:#7e631e}.reader-note-resolved .reader-note-badge{background:#e5f1e4;color:#326140}.reader-note-deleted{opacity:.65}.reader-note-deleted .reader-note-badge{background:#edf0eb;color:#657164}
+.reader-note[open]>summary{background:#f0f5ed;border-bottom:1px solid #e1e8dd}.reader-note-body{padding:12px}.reader-note-meta{font-size:11px;color:#788674;margin:0 0 12px}.reader-note-original{margin:0 0 12px;padding:9px 11px;border-left:3px solid #b8cdb0;background:#f7f9f4;font-size:13px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere}
+.reader-note-response{font-size:13px;line-height:1.8;white-space:pre-wrap}.reader-note-response strong{color:#315f47;font-size:12px}.reader-note-response p{margin:5px 0 12px}.reader-note-actions{display:flex;flex-wrap:wrap;align-items:center;gap:9px;font-size:12px;margin-top:10px}.reader-note-actions a{color:#315f47;text-underline-offset:3px}.reader-notes-empty{padding:18px 12px;text-align:center;color:#6e826e;font-size:13px}
+.reader-note-files{font-size:12px;margin:10px 0}.reader-note-files img{display:block;max-width:100%;margin:8px 0}.reader-notes :focus-visible{outline:3px solid #6d9d77;outline-offset:2px}#reader-note-status{font-size:12px;line-height:1.7;white-space:normal;overflow-wrap:anywhere}#reader-note-service-link{font-size:12px;line-height:1.7}
+@media(max-width:600px){.reader-notes{padding:22px 15px}.reader-note-title{font-size:13px}.reader-notes h2{font-size:22px}}
+
+/* Minimal paste-first note composer */
+#reader-note-section[hidden]{display:none!important}
+.reader-note-location{font-size:13px;color:#62776a;margin:8px 0 12px;line-height:1.5}
+#reader-attachments{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
+.reader-attachment{position:relative;display:inline-block;max-width:100%}
+.reader-attachment img{display:block;max-width:150px;max-height:120px;border-radius:10px;object-fit:contain}
+#reader-notes .reader-attachment-remove{position:absolute;right:4px;top:4px;width:25px;height:25px;padding:0;border-radius:50%;background:#fff;color:#294738;border:1px solid #bdcec0;line-height:21px;font-size:20px;opacity:0;transition:opacity .12s;box-shadow:0 1px 5px #0002}
+.reader-attachment:hover .reader-attachment-remove,.reader-attachment:focus-within .reader-attachment-remove{opacity:1!important}
+@media(hover:none){#reader-notes .reader-attachment-remove{opacity:1}}
+
+.reader-note-badges{display:flex;flex-direction:column;gap:5px;align-items:stretch;flex:0 0 auto;text-align:center}
+#reader-notes .reader-note-jump{display:block;font-size:10px;line-height:1.8;padding:1px 6px;border-radius:20px;white-space:nowrap;background:#e5f1e4;color:#326140;text-decoration:none;border:0}
+#reader-notes .reader-note-jump:hover,#reader-notes .reader-note-jump:focus-visible{background:#cfe3cd;outline:1px solid #8eae8b}

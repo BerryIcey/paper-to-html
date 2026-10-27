@@ -8,11 +8,11 @@
 
 解释留在论文旁，问题和笔记随着阅读积累。
 
-[![推荐 v2.4](https://img.shields.io/badge/推荐版本-v2.4-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.4)
+[![最新版](https://img.shields.io/badge/推荐版本-最新版-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/latest)
 [![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml)
 [![MIT](https://img.shields.io/badge/License-MIT-657b72?style=flat-square)](LICENSE)
 
-**[在线阅读真实案例](https://berryicey.github.io/paper-to-html/) · [下载 v2.4](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip) · [查看技能](https://github.com/BerryIcey/paper-to-html/blob/v2.4/skills/paper-to-html-v2.4/SKILL.md) · [更新说明](docs/v2.4-changes.md) · [快速开始](#三步开始) · [反馈问题](https://github.com/BerryIcey/paper-to-html/issues)**
+**[在线阅读真实案例](https://berryicey.github.io/paper-to-html/) · [下载最新版](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip) · [查看技能](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.4/SKILL.md) · [更新说明](docs/latest-changes.md) · [快速开始](#三步开始) · [反馈问题](https://github.com/BerryIcey/paper-to-html/issues)**
 
 </div>
 
@@ -46,7 +46,7 @@
 
 ### 1 · 安装推荐版
 
-下载 [paper-to-html-v2.4.zip](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.zip)，解压后将其中完整的 `paper-to-html-v2.4` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有旧安装时先在技能目录外备份。新开聊天确认技能可用。
+下载 [paper-to-html-v2.4.zip](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip)，解压后将其中完整的 `paper-to-html-v2.4` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有旧安装时先在技能目录外备份。新开聊天确认技能可用。
 
 下载包版本是 **v2.4**，技能调用名称是 **`$paper-to-html-v2.4`**。GitHub 更新不会自动更新电脑上的安装。
 
@@ -133,7 +133,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 
 **v2.4 经过 Darwin Skill 辅助优化；未新增功能，未进行额外人工优化。** 仅调整四项验收、整体走读、修复重测流程，包含独立评审和用户人工确认；不据此宣称全文准确性或理解效果提高。
 
-[v2.4 更新说明](docs/v2.4-changes.md) · [历史版本与下载](docs/versions.md) · [安装与常见问题](docs/getting-started.md)。优化前 v2.3 和更早版本保留；本次首页整理不改变 v2.4 下载包。
+[v2.4 更新说明](docs/latest-changes.md) · [历史版本与下载](docs/versions.md) · [安装与常见问题](docs/getting-started.md)。优化前 v2.3 和更早版本保留；本次首页整理不改变 v2.4 下载包。
 
 ## 使用前需要知道
 

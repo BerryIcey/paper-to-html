@@ -7,6 +7,7 @@ with tempfile.TemporaryDirectory() as tmp:
     content.write_text('<section id="abstract" data-section="01摘要"><h1>组件测试</h1><p id="p1" data-highlight-block>测试文字</p></section><section id="cards" data-section="02知识卡"><details id="card1" data-reader-card><summary>测试卡</summary><p>测试内容</p></details></section>',encoding='utf-8')
     subprocess.run([sys.executable,str(ROOT/'scripts/build_reader.py'),'--content',str(content),'--paper-id','isolated-component-test','--out',str(t/'paper-reading.html')],check=True)
     s=(t/'paper-reading.html').read_text('utf-8');assert 'reader-return' in s and '<script src=' not in s
+    assert '<link ' not in s and '.reader-notes{' in s,'Reader styles must be embedded for a self-contained page'
     sock=socket.socket();sock.bind(('127.0.0.1',0));port=sock.getsockname()[1];sock.close();base=f'http://127.0.0.1:{port}'
     proc=subprocess.Popen([sys.executable,str(ROOT/'assets/reader-components/reading_server.py'),'--root',str(t),'--port',str(port)],stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
     def api(payload=None,origin=None):
