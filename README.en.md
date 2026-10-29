@@ -40,7 +40,7 @@ The goal is fewer repeated explanations and less searching through chat history.
 
 This is an existing Chinese reading guide, reused as a public static preview: original text, translation, figure explanations, 47 concept cards and an argument chain. It is not a newly generated v2.4 benchmark. The source article is CC BY 4.0; [attribution and adaptations](THIRD_PARTY_NOTICES.md) are documented. No private note queue or attachments are published. Visitor drafts stay in the current browser; static hosting cannot save notes to the author's project.
 
-One previous run, **reported by the maintainer**, took about **50 minutes** and used about **15% of a Plus account's weekly allowance**. This is a single anecdotal record, not a typical cost, token count or guaranteed runtime; it is not identified as this hosted example's cost. [Record and limits](docs/usage-observation.md).
+One **measured v2.4 guide-creation run** (2026-10-29, the eCHROMA paper) used **gpt-6.1-sol / low**, took about **19 minutes 35 seconds** of session elapsed time, and recorded **6,055,685 tokens**: **5,864,320 cached input**, **145,126 uncached input**, and **46,239 output**. This is a single session-log observation including repeated context across calls, not a fixed per-paper cost, an API bill, or the creation cost of the hosted example. [Full record and counting scope](docs/usage-observation.md).
 
 ## Start in three steps
 
