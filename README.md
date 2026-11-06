@@ -4,8 +4,6 @@
 
 # paper-to-html
 
-**今天问明白，下次也找得到。**
-
 为需要反复精读论文的读者，把 AI 的逐图讲解、概念解释和全文梳理留在论文旁。
 
 ![论文 PDF → AI 逐图带读与概念解释 → 可反复查阅的中文共读网页](docs/images/overview-flow-zh.svg)
@@ -16,7 +14,9 @@
 
 </div>
 
-[![真实论文共读：切换小图时原图与译读同步更新](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
+[![图 3a 读图演示：原图固定，右侧依次查看原图注、译文、实验目的、统计、图例、结果和结论边界](docs/images/live-figure-walkthrough.webp)](https://berryicey.github.io/paper-to-html/#results-figure-3)
+
+图 3a 用箱线图比较不同样本在六类基因组区域的甲基化信号。动图依次展示原图注、中文译文、实验目的与比较对象、Cohen’s d 的统计解释、图例与坐标、从观察到判断，以及结论边界和下一步。
 
 案例：Mulet-Lazaro 等（2024）的中文共读网页。[来源与许可](THIRD_PARTY_NOTICES.md)。
 
@@ -38,6 +38,8 @@
 - **读懂编码**：英文分类、坐标、颜色、点形、单位与方法输出，在图旁解释。
 - **核对统计**：星号检验什么、参照是谁、P值或阈值及校正如何定义；来源没写清时标出缺口。
 - **走到判断**：用图上一个真实例子连接观察与作者结论，保留反例和限定。
+
+[![切换图 1 的小图，原图与译读同步更新](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
 ![逐图带读与原图放大](docs/images/live-figure-zoom.webp)
 
