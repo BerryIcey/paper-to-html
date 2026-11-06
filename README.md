@@ -6,6 +6,8 @@
 
 把原文、中文译读、图解和知识卡放在同一个网页。
 
+[![在线预览真实论文](docs/images/live-preview-zh.svg)](https://berryicey.github.io/paper-to-html/)
+
 **[在线预览](https://berryicey.github.io/paper-to-html/)　·　[下载 v2.4](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip)　·　[开始使用](#三步开始)**
 
 </div>
