@@ -4,85 +4,18 @@
 
 # paper-to-html
 
-### 把读懂的内容留下，下次不用从头问起
+把原文、中文译读、图解和知识卡放在同一个网页。
 
-解释留在论文旁，问题和笔记随着阅读积累。
-
-[![在线预览真实论文](docs/images/live-preview-zh.svg)](https://berryicey.github.io/paper-to-html/)
-
-Mulet-Lazaro 等（2024） · 无需安装，直接打开中文共读网页
-
-[![最新版](https://img.shields.io/badge/推荐版本-最新版-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/latest)
-[![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml)
-[![MIT](https://img.shields.io/badge/License-MIT-657b72?style=flat-square)](LICENSE)
-
-**[下载最新版](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip) · [查看技能](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.4/SKILL.md) · [更新说明](docs/latest-changes.md) · [快速开始](#三步开始) · [反馈问题](https://github.com/BerryIcey/paper-to-html/issues)**
+**[在线预览](https://berryicey.github.io/paper-to-html/)　·　[下载 v2.4](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip)　·　[开始使用](#三步开始)**
 
 </div>
-
-**供 Codex 使用的中文论文共读 Skill 与阅读组件。仅在 Codex 测试，其他 Agent 尚未测试。** 把连续原文、完整翻译、读图解释、知识卡和论证链放在同一网页，当前重点是生物医学实验论文。制作需要能读取 PDF 的助手；生成的静态阅读页可离线打开，项目笔记需要本地服务。
-
-## 先看一篇真实论文
 
 [![真实论文共读演示：切换图 1 的小图，原图、图注和中文译读同步更新](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
 *动图来自 Mulet-Lazaro 等（2024）的[公开共读网页](https://berryicey.github.io/paper-to-html/)。点击动图打开案例，可以切换小图、对照译文和讲解、查知识卡。*
 
-公开案例直接复用已有中文成品，包含原文、翻译、读图解释、47 张知识卡和论证链。它不是 v2.4 从零生成的性能基准。原论文采用 CC BY 4.0，[署名和改编说明](THIRD_PARTY_NOTICES.md)已附上。访客可标黄和保留当前浏览器草稿，静态站不能将笔记提交到作者项目；私人笔记和附件未公开。
 
-一次 **v2.4 从零制作的实测记录**（2026-10-29，eCHROMA 论文）：使用 **gpt-6.1-sol / low**，制作耗时约 **19 分 29 秒**，累计 **5,858,896 tokens**，其中 **5,668,096 为缓存输入**、**144,845 为非缓存输入**、**45,955 为输出**。这是单次制作日志统计，包含多轮重复上下文；不是每篇论文的固定消耗、API 账单或当前公开案例的成本。[完整记录与统计口径](docs/usage-observation.md)。
-
-## 今天问明白，下一次也找得到
-
-读论文时，和 AI 来回聊了很多轮，当时似乎懂了。隔一段时间再看，却忘了那段推理：要么在很长的对话里翻找，要么把同一个问题重新问一遍。
-
-**paper-to-html 想省下的，就是这部分重复。** 先把论文整理成带原文、翻译、图解和知识卡的网页；读到不懂的地方，就在对应内容旁留下随手记。下一轮让助手处理疑问，按需补充网页讲解并保留处理回复，逐渐积累属于自己的问题、理解与阅读笔记。
-
-[![打开随手记，在当前阅读章节旁输入一条示例草稿](docs/images/live-reading-notes.webp)](https://berryicey.github.io/paper-to-html/#abstract)
-
-*公开案例的随手记面板。访客草稿留在当前浏览器。*
-
-**再次打开时，不只重看论文，也能回看“当时卡在哪里、后来怎样理解”。** 不用每次都从空白对话重新开始。随手记需通过本地服务保存，下一轮由助手处理；网页不会即时自动回答或自行更新。
-
-## 三步开始
-
-### 1 · 安装推荐版
-
-下载 [paper-to-html-v2.4.zip](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip)，解压后将其中完整的 `paper-to-html-v2.4` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有旧安装时先在技能目录外备份。新开聊天确认技能可用。
-
-下载包版本是 **v2.4**，技能调用名称是 **`$paper-to-html-v2.4`**。GitHub 更新不会自动更新电脑上的安装。
-
-### 2 · 提供论文并调用
-
-```text
-$paper-to-html-v2.4
-把这篇论文做成中文共读网页。
-完整翻译核心正文，按论证需要决定详讲、简讲和跨图比较。
-重要概念独立讲清，梳理全文论证，保留原图及来源。
-```
-
-提供有权使用的 PDF。默认包含核心正文、全部主图、必要知识卡与文末评议；若方法、算法或证明构成论文主贡献，也属于核心；复现级方法细节、附图详解和复习内容可按需追加。缺少补充资料时，助手应说明实际覆盖范围。
-
-### 3 · 阅读并留下问题
-
-静态 HTML 可离线切图、放大、查卡和标记。要保存随手记，请打开该论文的本地阅读服务；问题保存到项目，供下一轮助手处理，**不会即时调用 GPT**。正文与笔记、浏览器草稿与项目文件是不同的保存内容。
-
-<details>
-<summary>只想体验组件？启动演示服务</summary>
-
-只看静态演示时，可[下载模拟演示 HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/paper-reading.html)，保存后用浏览器打开。
-
-不需要模型或 OpenAI API 密钥。需要 Python：
-
-```sh
-git clone https://github.com/BerryIcey/paper-to-html.git
-cd paper-to-html
-python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --root demo --port 18765
-```
-
-在同一台设备打开 `http://127.0.0.1:18765/paper-reading.html`。这只是临时演示服务；正式项目需要配置独立后台运行方式。
-
-</details>
+供 Codex 使用的中文论文共读 Skill，当前重点是生物医学实验论文。制作需要能读取 PDF 的助手；生成的静态阅读页可离线打开。[查看 Skill](skills/paper-to-html-v2.4/SKILL.md)。
 
 ## 三个核心阅读体验
 
@@ -133,6 +66,95 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 
 </details>
 
+## 三步开始
+
+### 1 · 安装推荐版
+
+下载 [paper-to-html-v2.4.zip](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip)，解压后将其中完整的 `paper-to-html-v2.4` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有旧安装时先在技能目录外备份。新开聊天确认技能可用。
+
+下载包版本是 **v2.4**，技能调用名称是 **`$paper-to-html-v2.4`**。GitHub 更新不会自动更新电脑上的安装。
+
+### 2 · 提供论文并调用
+
+```text
+$paper-to-html-v2.4
+把这篇论文做成中文共读网页。
+完整翻译核心正文，按论证需要决定详讲、简讲和跨图比较。
+重要概念独立讲清，梳理全文论证，保留原图及来源。
+```
+
+提供有权使用的 PDF。默认包含核心正文、全部主图、必要知识卡与文末评议；若方法、算法或证明构成论文主贡献，也属于核心；复现级方法细节、附图详解和复习内容可按需追加。缺少补充资料时，助手应说明实际覆盖范围。
+
+### 3 · 打开网页阅读
+
+静态 HTML 可直接在浏览器打开，离线切图、放大、查知识卡和标记。阅读本身不需要启动本地服务。随手记是可选功能；需要保存问题到项目时，再使用下方说明中的本地服务。
+
+<details>
+<summary>只想体验组件？启动演示服务</summary>
+
+只看静态演示时，可[下载模拟演示 HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/paper-reading.html)，保存后用浏览器打开。
+
+不需要模型或 OpenAI API 密钥。需要 Python：
+
+```sh
+git clone https://github.com/BerryIcey/paper-to-html.git
+cd paper-to-html
+python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --root demo --port 18765
+```
+
+在同一台设备打开 `http://127.0.0.1:18765/paper-reading.html`。这只是临时演示服务；正式项目需要配置独立后台运行方式。
+
+</details>
+
+## 可选辅助 · 随手记与标记
+
+随手记用于把问题留给下一轮助手处理，不是即时问答；保存到项目需要本地服务。只阅读论文时可以不启用。
+
+<details>
+<summary>展开随手记的使用方式、预览与保存边界</summary>
+
+读论文时，和 AI 来回聊了很多轮，当时似乎懂了。隔一段时间再看，却忘了那段推理：要么在很长的对话里翻找，要么把同一个问题重新问一遍。
+
+**paper-to-html 想省下的，就是这部分重复。** 先把论文整理成带原文、翻译、图解和知识卡的网页；读到不懂的地方，就在对应内容旁留下随手记。下一轮让助手处理疑问，按需补充网页讲解并保留处理回复，逐渐积累属于自己的问题、理解与阅读笔记。
+
+[![打开随手记，在当前阅读章节旁输入一条示例草稿](docs/images/live-reading-notes.webp)](https://berryicey.github.io/paper-to-html/#abstract)
+
+*公开案例的随手记面板。访客草稿留在当前浏览器。*
+
+**再次打开时，不只重看论文，也能回看“当时卡在哪里、后来怎样理解”。** 不用每次都从空白对话重新开始。随手记需通过本地服务保存，下一轮由助手处理；网页不会即时自动回答或自行更新。
+
+### 查阅与标记工具
+
+核心是理解论文。下面的工具帮助查阅、标记和保留问题：
+
+| 工具 | 怎么用 |
+|---|---|
+| 图例与术语颜色 | 查看网页术语的类别，按需关闭底色；网页配色与原图图例分别解释 |
+| 荧光笔 | 主动开启后标记文字，支持撤销；个人标黄与术语颜色开关独立 |
+| 随手记 | 在侧边记录文字或截图，保存到本地项目，留给下一轮助手处理 |
+
+[![开启荧光笔、拖动标注正文，再展开术语配色图例](docs/images/live-reading-tools.webp)](https://berryicey.github.io/paper-to-html/#abstract)
+
+随手记需要本地阅读服务，静态文件中的草稿不等于已写入项目；保存问题不会即时触发 GPT。图像放大、面板切换和临时查阅返回也可辅助阅读。
+
+</details>
+
+## 示例来源与制作记录
+
+<details>
+<summary>公开案例的来源、使用许可与静态站能力</summary>
+
+公开案例直接复用已有中文成品，包含原文、翻译、读图解释、47 张知识卡和论证链。它不是 v2.4 从零生成的性能基准。原论文采用 CC BY 4.0，[署名和改编说明](THIRD_PARTY_NOTICES.md)已附上。访客可标黄和保留当前浏览器草稿，静态站不能将笔记提交到作者项目；私人笔记和附件未公开。
+
+</details>
+
+<details>
+<summary>一次制作的耗时与 token 记录（单次观察，不是每篇固定成本）</summary>
+
+一次 **v2.4 从零制作的实测记录**（2026-10-29，eCHROMA 论文）：使用 **gpt-6.1-sol / low**，制作耗时约 **19 分 29 秒**，累计 **5,858,896 tokens**，其中 **5,668,096 为缓存输入**、**144,845 为非缓存输入**、**45,955 为输出**。这是单次制作日志统计，包含多轮重复上下文；不是每篇论文的固定消耗、API 账单或当前公开案例的成本。[完整记录与统计口径](docs/usage-observation.md)。
+
+</details>
+
 ## 当前版本
 
 **v2.4 经过 Darwin Skill 辅助优化；未新增功能，未进行额外人工优化。** 仅调整四项验收、整体走读、修复重测流程，包含独立评审和用户人工确认；不据此宣称全文准确性或理解效果提高。
@@ -148,20 +170,6 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 - **设备访问：** `127.0.0.1` 只供本机使用。手机能读离线文件，不代表能连接电脑的本地地址提交笔记。
 - **后台与历史：** 正式项目可保留 0/1/2 个历史备份，最新版另计；Windows 后台方案与其他系统不同，重启存活需另行验证。
 
-## 附加功能 · 阅读时顺手使用
-
-核心是理解论文。下面的工具帮助查阅、标记和保留问题：
-
-| 工具 | 怎么用 |
-|---|---|
-| 图例与术语颜色 | 查看网页术语的类别，按需关闭底色；网页配色与原图图例分别解释 |
-| 荧光笔 | 主动开启后标记文字，支持撤销；个人标黄与术语颜色开关独立 |
-| 随手记 | 在侧边记录文字或截图，保存到本地项目，留给下一轮助手处理 |
-
-[![开启荧光笔、拖动标注正文，再展开术语配色图例](docs/images/live-reading-tools.webp)](https://berryicey.github.io/paper-to-html/#abstract)
-
-随手记需要本地阅读服务，静态文件中的草稿不等于已写入项目；保存问题不会即时触发 GPT。图像放大、面板切换和临时查阅返回也可辅助阅读。
-
 ## 反馈与参与改进
 
 [提交问题](https://github.com/BerryIcey/paper-to-html/issues)时请写明版本、浏览器、期望行为与实际情况。解释不清楚时，指出卡在哪个对象、比较或推理步骤，比只说“太简略”更有帮助。
@@ -173,3 +181,5 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 有帮助的话，欢迎 **Star** 收藏，方便回来找版本。更有价值的反馈是：哪一段、哪张图、哪个推理还讲不清楚。
 
 [贡献指南](CONTRIBUTING.md) · [提出建议](https://github.com/BerryIcey/paper-to-html/issues/new?template=feature_request.md)
+
+[![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml) · [MIT](LICENSE)
