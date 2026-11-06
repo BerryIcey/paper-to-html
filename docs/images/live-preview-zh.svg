@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224" height="48" viewBox="0 0 224 48">
+  <rect width="224" height="48" rx="10" fill="#2f6354"/>
+  <path d="m20 17 12 7-12 7z" fill="#fff"/>
+  <text x="43" y="25" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="700" fill="#fff">在线预览真实论文</text>
+  <path d="M192 24h12m-5-5 5 5-5 5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -2,21 +2,35 @@
 
 **简体中文 · [English](README.en.md)**
 
-![paper-to-html — 阅读、理解、留下问题](docs/images/cover.svg)
+# paper-to-html
 
 ### 把读懂的内容留下，下次不用从头问起
 
 解释留在论文旁，问题和笔记随着阅读积累。
 
+[![在线预览真实论文](docs/images/live-preview-zh.svg)](https://berryicey.github.io/paper-to-html/)
+
+Mulet-Lazaro 等（2024） · 无需安装，直接打开中文共读网页
+
 [![最新版](https://img.shields.io/badge/推荐版本-最新版-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/latest)
 [![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml)
 [![MIT](https://img.shields.io/badge/License-MIT-657b72?style=flat-square)](LICENSE)
 
-**[在线阅读真实案例](https://berryicey.github.io/paper-to-html/) · [下载最新版](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip) · [查看技能](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.4/SKILL.md) · [更新说明](docs/latest-changes.md) · [快速开始](#三步开始) · [反馈问题](https://github.com/BerryIcey/paper-to-html/issues)**
+**[下载最新版](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip) · [查看技能](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.4/SKILL.md) · [更新说明](docs/latest-changes.md) · [快速开始](#三步开始) · [反馈问题](https://github.com/BerryIcey/paper-to-html/issues)**
 
 </div>
 
 **供 Codex 使用的中文论文共读 Skill 与阅读组件。仅在 Codex 测试，其他 Agent 尚未测试。** 把连续原文、完整翻译、读图解释、知识卡和论证链放在同一网页，当前重点是生物医学实验论文。制作需要能读取 PDF 的助手；生成的静态阅读页可离线打开，项目笔记需要本地服务。
+
+## 先看一篇真实论文
+
+[![真实论文共读演示：切换图 1 的小图，原图、图注和中文译读同步更新](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
+
+*动图来自 Mulet-Lazaro 等（2024）的[公开共读网页](https://berryicey.github.io/paper-to-html/)。点击动图打开案例，可以切换小图、对照译文和讲解、查知识卡。*
+
+公开案例直接复用已有中文成品，包含原文、翻译、读图解释、47 张知识卡和论证链。它不是 v2.4 从零生成的性能基准。原论文采用 CC BY 4.0，[署名和改编说明](THIRD_PARTY_NOTICES.md)已附上。访客可标黄和保留当前浏览器草稿，静态站不能将笔记提交到作者项目；私人笔记和附件未公开。
+
+一次 **v2.4 从零制作的实测记录**（2026-10-29，eCHROMA 论文）：使用 **gpt-6.1-sol / low**，制作耗时约 **19 分 29 秒**，累计 **5,858,896 tokens**，其中 **5,668,096 为缓存输入**、**144,845 为非缓存输入**、**45,955 为输出**。这是单次制作日志统计，包含多轮重复上下文；不是每篇论文的固定消耗、API 账单或当前公开案例的成本。[完整记录与统计口径](docs/usage-observation.md)。
 
 ## 今天问明白，下一次也找得到
 
@@ -24,23 +38,11 @@
 
 **paper-to-html 想省下的，就是这部分重复。** 先把论文整理成带原文、翻译、图解和知识卡的网页；读到不懂的地方，就在对应内容旁留下随手记。下一轮让助手处理疑问，按需补充网页讲解并保留处理回复，逐渐积累属于自己的问题、理解与阅读笔记。
 
-![从反复问答，到保留卡点、处理回复与个人笔记的可重读论文网页](docs/images/reading-memory.svg)
+[![公开案例的随手记面板，显示当前阅读章节和问题列表](docs/images/live-reading-notes.jpg)](https://berryicey.github.io/paper-to-html/#abstract)
+
+*公开案例的随手记面板。访客草稿留在当前浏览器。*
 
 **再次打开时，不只重看论文，也能回看“当时卡在哪里、后来怎样理解”。** 不用每次都从空白对话重新开始。随手记需通过本地服务保存，下一轮由助手处理；网页不会即时自动回答或自行更新。
-
-## 先看阅读体验
-
-![原创模拟演示的实际界面截图](docs/images/demo-preview-20261020.png)
-
-*实际界面截图，内容为原创模拟文字和图表；不是真实论文成果，也不是 v2.4 全部能力的验收样例。*[下载演示 HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/paper-reading.html) 后保存，用浏览器打开。也可以直接[在线阅读真实论文案例](https://berryicey.github.io/paper-to-html/)；上图仍是原创模拟界面的截图。
-
-## 直接打开一篇做好的论文
-
-**[在线阅读 Mulet-Lazaro 2024 共读网页 →](https://berryicey.github.io/paper-to-html/)**
-
-直接复用已有中文成品，保留原文、翻译、读图解释、47 张知识卡和论证链，不另外制作一份简化宣传页。它不是 v2.4 从零生成的性能基准。原论文采用 CC BY 4.0，[署名和改编说明](THIRD_PARTY_NOTICES.md)已附上；不公开私人笔记队列与附件。访客可读图查卡、标黄并保留当前浏览器草稿，静态站不能将笔记提交到作者项目。
-
-一次 **v2.4 从零制作的实测记录**（2026-10-29，eCHROMA 论文）：使用 **gpt-6.1-sol / low**，制作耗时约 **19 分 29 秒**，累计 **5,858,896 tokens**，其中 **5,668,096 为缓存输入**、**144,845 为非缓存输入**、**45,955 为输出**。这是单次制作日志统计，包含多轮重复上下文；不是每篇论文的固定消耗、API 账单或当前公开案例的成本。[完整记录与统计口径](docs/usage-observation.md)。
 
 ## 三步开始
 
@@ -68,6 +70,8 @@ $paper-to-html-v2.4
 <details>
 <summary>只想体验组件？启动演示服务</summary>
 
+只看静态演示时，可[下载模拟演示 HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/paper-reading.html)，保存后用浏览器打开。
+
 不需要模型或 OpenAI API 密钥。需要 Python：
 
 ```sh
@@ -89,10 +93,10 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 | 全文逻辑 | 研究问题 → 证据缺口 → 下一步，保留并行与否定结果 |
 
 <details>
-<summary>展开详细讲解与功能示意图</summary>
+<summary>展开详细讲解与真实网页预览</summary>
 
 
-下面使用统一比例的功能示意图，突出阅读过程与操作重点；并非实际界面截图，模拟数据不代表真实论文的研究结论。
+下方截图和动图均来自上面的公开论文案例。
 
 ### 01 · 逐图带你读：从“看见图”到“读出证据”
 
@@ -102,7 +106,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 
 因此读者得到的不是一句“结果显著”，而是一条能复述的理解过程。图注、译文、简短结论和详细解释分别保留；图解不能只复述图注，也不能用通用提醒代替实际读图。
 
-![逐图带读：原图与对应解释同步切换](docs/images/figure-walkthrough.svg)
+[![图 1a 的原图、图注、中文译读和解释](docs/images/live-paper-preview.jpg)](https://berryicey.github.io/paper-to-html/#results-figure-1)
 
 
 ### 02 · 术语知识卡：补足理解，不打断阅读
@@ -113,7 +117,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 
 术语从当前论文发现和判断，不以已有词表是否命中为前提。同名不同义按语境区分；相关概念之间先交代关系，避免突然跳到另一个名词。卡片按需展开，查完可以回到原来的小图和文字滚动位置。
 
-![术语知识卡：解释概念及其在比较中的作用](docs/images/knowledge-cards.svg)
+[![从图注点开 MCIP-seq 知识卡，再返回原来的小图和阅读位置](docs/images/live-concept-card.webp)](https://berryicey.github.io/paper-to-html/#results-figure-1)
 
 
 ### 03 · 全文论证链：看懂每一步为什么需要
@@ -122,7 +126,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 
 它不是把图标题排成目录，也不是把术语用箭头串起来。并行证据、没有支持预期的结果、补充验证和尚未解决的分支都应保留；研究顺序不能直接写成事件发生顺序或因果关系。
 
-![全文论证链：问题、比较、观察和下一步的关系](docs/images/argument-chain.svg)
+[![公开案例的全文论证链，按研究问题串起每一步证据](docs/images/live-argument-chain.jpg)](https://berryicey.github.io/paper-to-html/#story)
 
 
 [下载演示 HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/paper-reading.html)，保存后用浏览器打开。GitHub 的 HTML 文件页只显示源码。这个项目是供 Codex 使用的 **Skill 与网页阅读组件**，生成解释需要核对当前论文来源。
@@ -154,7 +158,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 | 荧光笔 | 主动开启后标记文字，支持撤销；个人标黄与术语颜色开关独立 |
 | 随手记 | 在侧边记录文字或截图，保存到本地项目，留给下一轮助手处理 |
 
-![附加阅读工具：荧光笔、图例与随手记](docs/images/reading-tools.svg)
+[![公开案例的荧光标注与术语配色图例](docs/images/live-reading-tools.jpg)](https://berryicey.github.io/paper-to-html/#abstract)
 
 随手记需要本地阅读服务，静态文件中的草稿不等于已写入项目；保存问题不会即时触发 GPT。图像放大、面板切换和临时查阅返回也可辅助阅读。
 

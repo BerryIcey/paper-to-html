@@ -2,21 +2,35 @@
 
 **[简体中文](README.md) · English**
 
-![paper-to-html — Read, understand, keep your questions](docs/images/cover.svg)
+# paper-to-html
 
 ### A paper guide that keeps what you learned
 
 Keep explanations beside the paper. Return to your questions, not a buried chat thread.
 
+[![Open live preview](docs/images/live-preview-en.svg)](https://berryicey.github.io/paper-to-html/)
+
+Mulet-Lazaro et al. (2024) · Chinese reading guide · No installation required
+
 [![Recommended v2.4](https://img.shields.io/badge/Recommended-v2.4-2f6354?style=flat-square)](https://github.com/BerryIcey/paper-to-html/releases/latest)
 [![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml)
 [![MIT](https://img.shields.io/badge/License-MIT-657b72?style=flat-square)](LICENSE)
 
-**[Live real-paper example](https://berryicey.github.io/paper-to-html/) · [Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip) · [Read the Skill](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.4/SKILL.md) · [Release notes](docs/latest-changes.en.md) · [Quick start](#start-in-three-steps) · [Report an issue](https://github.com/BerryIcey/paper-to-html/issues)**
+**[Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip) · [Read the Skill](https://github.com/BerryIcey/paper-to-html/blob/main/skills/paper-to-html-v2.4/SKILL.md) · [Release notes](docs/latest-changes.en.md) · [Quick start](#start-in-three-steps) · [Report an issue](https://github.com/BerryIcey/paper-to-html/issues)**
 
 </div>
 
 **A Codex Skill for source-grounded, Chinese-first paper co-reading. Only Codex has been tested; other agents have not been tested.** It combines continuous text and translation, figure walkthroughs, concept cards and an argument chain. Current focus: biomedical experimental papers. Creating a guide needs an assistant with PDF access; the finished static reader works offline. Project notes need a local service.
+
+## Try it with a real paper
+
+[![Live reader demo: switch Figure 1 panels and see the image, caption and Chinese translation update together](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
+
+*Recorded from the [public reading guide](https://berryicey.github.io/paper-to-html/) for Mulet-Lazaro et al. (2024). Click the preview to switch figure panels, compare the translation and explanations, or open a concept card.*
+
+The public example reuses an existing Chinese guide with the original text, translation, figure explanations, 47 concept cards and an argument chain. It is not a newly generated v2.4 benchmark. The source article is CC BY 4.0; [attribution and adaptations](THIRD_PARTY_NOTICES.md) are documented. Visitors can highlight text and keep drafts in their browser. The static site cannot save notes to the author's project, and no private notes or attachments are published.
+
+One **measured v2.4 guide-creation run** (2026-10-29, the eCHROMA paper) used **gpt-6.1-sol / low**, took about **19 minutes 29 seconds** to create the guide, and recorded **5,858,896 tokens**: **5,668,096 cached input**, **144,845 uncached input**, and **45,955 output**. This is a single guide-creation observation including repeated context across calls, not a fixed per-paper cost, an API bill, or the creation cost of the hosted example. [Full record and counting scope](docs/usage-observation.md).
 
 ## Understand it once. Keep it for the next reading.
 
@@ -24,23 +38,11 @@ A good AI explanation helps in the moment. Weeks later, you may forget the reaso
 
 **paper-to-html brings those explanations back to the paper.** Start with a readable guide, note what still confuses you, ask the assistant to address it in a later session, and retain the responses and any requested guide updates. Your paper project gradually holds your own questions, clarifications and reading notes—so reopening it also brings back where you got stuck and what helped.
 
-![From repeated chat questions to a revisitable paper guide with personal questions and notes](docs/images/en-reading-memory.svg)
+[![Notes panel in the public guide with the current section and question list](docs/images/live-reading-notes.jpg)](https://berryicey.github.io/paper-to-html/#abstract)
+
+*The public guide's notes panel. Visitor drafts stay in the current browser.*
 
 The goal is fewer repeated explanations and less searching through chat history. It still supports ongoing questions: project notes save through the local service, and the assistant handles them in a later session; the webpage does not answer or update itself instantly.
-
-## See the reader
-
-![Actual interface of the original synthetic English demo](docs/images/en-demo-preview-20261020.png)
-
-*Actual interface screenshot, original synthetic text and invented charts; not a real-paper result or a complete v2.4 acceptance example.* [Download demo HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/en/paper-reading.html), save and open it in a browser. [Open the real-paper preview](https://berryicey.github.io/paper-to-html/) instead of downloading. The screenshot above is the synthetic interface demo.
-
-## A real paper you can read now
-
-**[Open Mulet-Lazaro et al. 2024 →](https://berryicey.github.io/paper-to-html/)**
-
-This is an existing Chinese reading guide, reused as a public static preview: original text, translation, figure explanations, 47 concept cards and an argument chain. It is not a newly generated v2.4 benchmark. The source article is CC BY 4.0; [attribution and adaptations](THIRD_PARTY_NOTICES.md) are documented. No private note queue or attachments are published. Visitor drafts stay in the current browser; static hosting cannot save notes to the author's project.
-
-One **measured v2.4 guide-creation run** (2026-10-29, the eCHROMA paper) used **gpt-6.1-sol / low**, took about **19 minutes 29 seconds** to create the guide, and recorded **5,858,896 tokens**: **5,668,096 cached input**, **144,845 uncached input**, and **45,955 output**. This is a single guide-creation observation including repeated context across calls, not a fixed per-paper cost, an API bill, or the creation cost of the hosted example. [Full record and counting scope](docs/usage-observation.md).
 
 ## Start in three steps
 
@@ -68,6 +70,8 @@ The static HTML supports offline panel switching, zoom, cards and highlighting. 
 <details>
 <summary>Try the components without a model</summary>
 
+To try just the static reader, [download the synthetic English demo HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/en/paper-reading.html) and open it in a browser.
+
 Requires Python, but no OpenAI API key:
 
 ```sh
@@ -89,10 +93,10 @@ Open `http://127.0.0.1:18765/paper-reading.html` on the same machine. This is a 
 | Follow the paper | Questions → evidence gaps → next steps, including negative results |
 
 <details>
-<summary>See detailed feature explanations and illustrations</summary>
+<summary>See detailed walkthroughs and previews from the live reader</summary>
 
 
-The consistent-ratio feature illustrations explain the reading approach and interactions. They are not exact UI screenshots; simulated values are not findings from a real paper. The English demo is separate; the released Skill remains Chinese-first.
+The screenshots and animations below come from the public Chinese reading guide above.
 
 ### 01 · Figure walkthroughs: read the evidence step by step
 
@@ -102,7 +106,7 @@ A walkthrough starts with **why this comparison is needed, who or what is compar
 
 This goes beyond a caption or “significant difference.” Captions, translations, short findings and detailed explanations have different roles. The reader should be able to reconstruct the comparison and inference.
 
-![A figure with its synchronized explanation](docs/images/en-figure-walkthrough.svg)
+[![Figure 1a beside its original caption, Chinese translation and explanation](docs/images/live-paper-preview.jpg)](https://berryicey.github.io/paper-to-html/#results-figure-1)
 
 
 ### 02 · Knowledge cards: clarify a concept and keep your place
@@ -113,7 +117,7 @@ Lookup links in the text and captions open cards for unfamiliar concepts that ma
 
 Concepts are discovered in the current paper rather than limited to an existing vocabulary list. Ambiguous names need context; related concepts need an explicit connection. After a temporary lookup, return to the previous panel and reading position.
 
-![A knowledge card explaining the reference for a comparison](docs/images/en-knowledge-cards.svg)
+[![Open the MCIP-seq concept card from the caption and return to the same panel and reading position](docs/images/live-concept-card.webp)](https://berryicey.github.io/paper-to-html/#results-figure-1)
 
 
 ### 03 · The argument map: understand why each step follows
@@ -122,7 +126,7 @@ Knowing each figure is not enough to understand the whole paper. The argument ma
 
 It is not a list of figure titles or a chain of unexplained terms. Parallel evidence, negative findings, supporting checks and open branches should remain visible. Research order alone does not establish chronology or causation.
 
-![An argument map connecting a question, observation and next step](docs/images/en-argument-chain.svg)
+[![Argument map in the public guide, connecting each step of evidence to a research question](docs/images/live-argument-chain.jpg)](https://berryicey.github.io/paper-to-html/#story)
 
 
 [Download the English demo HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/en/paper-reading.html), save it, and open it in a browser. GitHub's HTML file page displays source code. This repository provides a **Codex Skill and reader components**; generated explanations still need source review.
@@ -154,7 +158,7 @@ Understanding the paper comes first. These tools support lookup, annotation and 
 | Highlighter | Explicitly enable highlighting and undo marks; term colors and personal highlights have independent controls |
 | Notes | Save text or screenshots in the local paper project for a later assistant session |
 
-![Supporting tools: highlighter, legend and notes](docs/images/en-reading-tools.svg)
+[![Text highlighting and the term color legend in the public guide](docs/images/live-reading-tools.jpg)](https://berryicey.github.io/paper-to-html/#abstract)
 
 Project notes require the local service. Browser drafts are a separate store, and saving a note does not trigger an instant GPT response. Zoom, panel switching and lookup return also support reading.
 
