@@ -6,7 +6,7 @@
 
 Original text, Chinese explanations, figure walkthroughs and concept cards in one webpage.
 
-**[Live preview](https://berryicey.github.io/paper-to-html/)　·　[Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip)　·　[Get started](#start-in-three-steps)**
+**[Live preview](https://berryicey.github.io/paper-to-html/) · [Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip) · [Start](#start-in-three-steps)**
 
 </div>
 
