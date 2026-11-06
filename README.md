@@ -6,7 +6,7 @@
 
 为需要反复精读论文的读者，把 AI 的逐图讲解、概念解释和全文梳理留在论文旁。
 
-![论文 PDF → AI 逐图带读与概念解释 → 可反复查阅的中文共读网页](docs/images/overview-flow-zh.svg)
+![把论文 PDF 发给 Agent，例如 Codex。Agent 调用 paper-to-html，生成包含读图与统计、概念与方法和全文论证链的共读网页。](docs/images/overview-flow-zh.svg)
 
 [![在线预览真实论文](docs/images/live-preview-zh.svg)](https://berryicey.github.io/paper-to-html/)
 

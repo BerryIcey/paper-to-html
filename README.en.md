@@ -6,7 +6,7 @@
 
 For readers who revisit papers in depth, paper-to-html keeps AI figure walkthroughs, concept explanations and a guide to the paper’s argument alongside the original text.
 
-![Paper PDF → AI figure and concept explanations → reusable Chinese reading guide](docs/images/overview-flow-en.svg)
+![Give a paper PDF to an agent such as Codex. It runs paper-to-html and creates a guide covering figures and statistics, concepts and methods, and the paper’s argument.](docs/images/overview-flow-en.svg)
 
 [![Open live preview](docs/images/live-preview-en.svg)](https://berryicey.github.io/paper-to-html/)
 
