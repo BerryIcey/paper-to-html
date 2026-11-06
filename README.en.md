@@ -14,9 +14,7 @@ For readers who revisit papers in depth, paper-to-html keeps AI figure walkthrou
 
 </div>
 
-[![Figure 3a walkthrough: the original stays visible beside the caption, translation, purpose, statistics, legend, findings and limits](docs/images/live-figure-walkthrough.webp)](https://berryicey.github.io/paper-to-html/#results-figure-3)
-
-Figure 3a uses box plots to compare methylation signals across sample groups in six types of genomic regions. The animation walks through the original caption, Chinese translation, purpose and comparison, Cohen’s d, legend and axes, interpretation of the plotted results, and the limits and next question.
+[![Switch figure panels with synchronized explanations](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
 Example: a Chinese guide to Mulet-Lazaro et al. (2024). [Attribution and license](THIRD_PARTY_NOTICES.md).
 
@@ -39,7 +37,13 @@ The action summary, author findings and detailed walkthrough answer different qu
 - **Check the statistics:** what a star tests, its reference, P values or thresholds and corrections; missing definitions stay explicit.
 - **Follow the inference:** a real plotted example connects observations to author findings, including exceptions and limits.
 
-[![Switch Figure 1 panels with synchronized explanations](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
+### Figure 3a example: from box plots to a conclusion
+
+The figure compares methylation signals across six types of genomic regions. The original stays visible on the left. The walkthrough on the right introduces the caption, translation and groups, explains the axes, colors and Cohen’s d, and shows what the observations support.
+
+[![Figure 3a stays fixed while highlights point out the caption, translation, comparison, statistics, legend, findings and limits](docs/images/live-figure-walkthrough.webp)](https://berryicey.github.io/paper-to-html/#results-figure-3)
+
+Open a panel to zoom in when you need to check the labels.
 
 ![Figure reading and image zoom](docs/images/live-figure-zoom.webp)
 

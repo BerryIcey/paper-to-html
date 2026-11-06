@@ -14,9 +14,7 @@
 
 </div>
 
-[![图 3a 读图演示：原图固定，右侧依次查看原图注、译文、实验目的、统计、图例、结果和结论边界](docs/images/live-figure-walkthrough.webp)](https://berryicey.github.io/paper-to-html/#results-figure-3)
-
-图 3a 用箱线图比较不同样本在六类基因组区域的甲基化信号。动图依次展示原图注、中文译文、实验目的与比较对象、Cohen’s d 的统计解释、图例与坐标、从观察到判断，以及结论边界和下一步。
+[![真实论文共读：切换小图时原图与译读同步更新](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
 案例：Mulet-Lazaro 等（2024）的中文共读网页。[来源与许可](THIRD_PARTY_NOTICES.md)。
 
@@ -39,7 +37,13 @@
 - **核对统计**：星号检验什么、参照是谁、P值或阈值及校正如何定义；来源没写清时标出缺口。
 - **走到判断**：用图上一个真实例子连接观察与作者结论，保留反例和限定。
 
-[![切换图 1 的小图，原图与译读同步更新](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
+### 图 3a 实例：从箱线图读到结论
+
+这张图比较六类基因组区域的甲基化信号。左侧保留原图，右侧先交代图注、译文和比较对象，再解释坐标、颜色与 Cohen’s d，最后对照图中的观察说明结论能推到哪一步。
+
+[![图 3a 的原图固定在左侧，右侧逐段高亮图注、译文、比较对象、统计、图例、结果和结论边界](docs/images/live-figure-walkthrough.webp)](https://berryicey.github.io/paper-to-html/#results-figure-3)
+
+想核对原图中的标注时，可以点开小图放大。
 
 ![逐图带读与原图放大](docs/images/live-figure-zoom.webp)
 
