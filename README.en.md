@@ -8,180 +8,113 @@ Original text, Chinese explanations, figure walkthroughs and concept cards in on
 
 [![Open live preview](docs/images/live-preview-en.svg)](https://berryicey.github.io/paper-to-html/)
 
-**[Live preview](https://berryicey.github.io/paper-to-html/) · [Download v2.4](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip) · [Start](#start-in-three-steps)**
+**[Download v2.5](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5/paper-to-html-v2.5.zip) · [Start](#start-in-three-steps) · [Release notes](docs/latest-changes.en.md)**
 
 </div>
 
-[![Live reader demo: switch Figure 1 panels and see the image, caption and Chinese translation update together](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
+[![Switch figure panels with synchronized explanations](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
-*Recorded from the [public reading guide](https://berryicey.github.io/paper-to-html/) for Mulet-Lazaro et al. (2024). Click the preview to switch figure panels, compare the translation and explanations, or open a concept card.*
+*The top preview is an existing Chinese guide to Mulet-Lazaro et al. (2024); click to explore. The current Skill download is v2.5. [Attribution and license](THIRD_PARTY_NOTICES.md).*
 
+A Chinese-first Codex Skill, currently focused on biomedical experimental papers. Creating a guide needs an assistant with PDF access; the static reader works offline.
 
-A Chinese-first Codex Skill, currently focused on biomedical experimental papers. Creating a guide needs an assistant with PDF access; the finished static reader works offline. [Read the Skill](skills/paper-to-html-v2.4/SKILL.md).
+**Explore:** [Figures](#figure-walkthroughs) · [Concepts](#concept-cards) · [Argument](#the-full-argument) · [Reading tools](#reading-tools) · [Get started](#start-in-three-steps)
 
-## Three core reading experiences
+## Figure walkthroughs
 
-| Need | Reader approach |
+![Figures: from plot to evidence](docs/images/feature-figures-en.svg)
+
+> **What did the authors do? What did they conclude? Which plotted evidence supports it?**
+
+The action summary, author findings and detailed walkthrough answer different questions. Each switchable panel has its own explanation; complex workflows follow their actual branches.
+
+- **Identify the comparison:** who or what is compared, and how data become a point, cell or bar.
+- **Read the encoding:** labels, axes, colors, shapes, units and method outputs explained beside the figure.
+- **Check the statistics:** what a star tests, its reference, P values or thresholds and corrections; missing definitions stay explicit.
+- **Follow the inference:** a real plotted example connects observations to author findings, including exceptions and limits.
+
+![Figure reading and image zoom](docs/images/live-figure-zoom.webp)
+
+## Concept cards
+
+![Concepts: understand and return](docs/images/feature-concepts-en.svg)
+
+**Open a term → understand it → return to the same panel and reading position.** Lookup links appear in the text, translations and captions.
+
+| Understanding | What the card explains |
 |---|---|
-| Read a figure | Purpose → comparison → plotted elements → observation → inference |
-| Understand a concept | Self-contained cards, article-specific use, lookup and return |
-| Follow the paper | Questions → evidence gaps → next steps, including negative results |
+| Identity | What is it, and what could be confused with it? |
+| Mechanism | How does it work, and how is the readout produced? |
+| Article-specific role | Why do the authors use it here? |
 
-<details>
-<summary>See detailed walkthroughs and previews from the live reader</summary>
+Concepts follow the paper and reader baseline, rather than a fixed vocabulary quota. Distinct concepts receive self-contained explanations before relationships are introduced.
 
+![Concept lookup and return](docs/images/live-concept-card.webp)
 
-The animations below come from the public Chinese reading guide above.
+## The full argument
 
-### 01 · Figure walkthroughs: read the evidence step by step
+![Argument: follow the reasoning](docs/images/feature-argument-en.svg)
 
-Each main figure has an original lookup; panels receive detailed, brief or shared explanations as the argument requires. Switching panels changes the image and its explanation together; zoom helps inspect labels and details.
+```text
+Question → evidence → remaining gap → why the next approach helps
+                ↘ parallel checks, negative results and open branches
+```
 
-A walkthrough starts with **why this comparison is needed, who or what is compared, and how the input becomes a plotted element**. It then maps axes, colors, symbols and units to their meanings, reads a specific visible observation, and explains how that observation supports a conclusion. The final step identifies what was answered and what remains open.
+Connect figures to the paper's questions rather than listing their titles. Explain what each result answers, what is still missing, and why the next method is informative. Research order alone does not establish causation.
 
-This goes beyond a caption or “significant difference.” Captions, translations, short findings and detailed explanations have different roles. The reader should be able to reconstruct the comparison and inference.
+![Full-paper argument map](docs/images/live-argument-chain.webp)
 
-[![Open and zoom Figure 1a, then return to its caption and Chinese translation](docs/images/live-figure-zoom.webp)](https://berryicey.github.io/paper-to-html/#results-figure-1)
+## Reading tools
 
+| 🔎 Lookup and navigation | 🖍️ Marks and colors | 📝 Notes (optional) |
+|---|---|---|
+| Figure navigation, panel switching, zoom/pan and exact lookup return | Enable highlighting, undo marks; term colors are independent | Save text or screenshots at the reading position for a later assistant session |
+| Static browser reading | Offline reading and local marks | Project persistence needs the local service; no instant model response |
 
-### 02 · Knowledge cards: clarify a concept and keep your place
-
-The default reader has completed relevant undergraduate coursework. Select concepts beyond that baseline when they affect understanding; databases help verify meanings and sources.
-
-Lookup links in the text and captions open cards for unfamiliar concepts that matter to understanding. A useful card explains **what the concept is, how it works or relates to others, why the paper uses it, and where interpretation needs care**. Expanding an abbreviation alone is insufficient.
-
-Concepts are discovered in the current paper rather than limited to an existing vocabulary list. Ambiguous names need context; related concepts need an explicit connection. After a temporary lookup, return to the previous panel and reading position.
-
-[![Open the MCIP-seq concept card from the caption and return to the same panel and reading position](docs/images/live-concept-card.webp)](https://berryicey.github.io/paper-to-html/#results-figure-1)
-
-
-### 03 · The argument map: understand why each step follows
-
-Knowing each figure is not enough to understand the whole paper. The argument map connects **what is known → what is missing → why this approach helps → how the result changes the interpretation**. A flow diagram locates the steps; detailed explanations justify their connections.
-
-It is not a list of figure titles or a chain of unexplained terms. Parallel evidence, negative findings, supporting checks and open branches should remain visible. Research order alone does not establish chronology or causation.
-
-[![Scroll through the argument map to see how two lines of evidence converge](docs/images/live-argument-chain.webp)](https://berryicey.github.io/paper-to-html/#story)
-
-
-[Download the English demo HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/en/paper-reading.html), save it, and open it in a browser. GitHub's HTML file page displays source code. This repository provides a **Codex Skill and reader components**; generated explanations still need source review.
-
-</details>
+> [!NOTE]
+> Browser drafts and project notes are separate. Automatic offline retry and cross-device sync are not implemented.
 
 ## Start in three steps
 
-### 1 · Install the recommended release
+### 1 · Install v2.5
 
-Download [paper-to-html-v2.4.zip](https://github.com/BerryIcey/paper-to-html/releases/latest/download/paper-to-html-v2.4.zip). Place its complete `paper-to-html-v2.4` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside that directory first, then start a new chat to confirm discovery.
+[**Download paper-to-html-v2.5.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5/paper-to-html-v2.5.zip) · [SHA-256](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5/paper-to-html-v2.5.sha256)
 
-The release is **v2.4**; the invocation is **`$paper-to-html-v2.4`**. Repository updates do not automatically update installed copies.
+Place the complete `paper-to-html-v2.5` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside discovery directories, then start a new chat to confirm discovery. Repository updates do not update installed copies automatically.
 
-### 2 · Provide a paper
+### 2 · Provide the paper
 
 ```text
-$paper-to-html-v2.4
+$paper-to-html-v2.5
 Create a Chinese HTML walkthrough of this paper.
-Translate the core text. Choose detailed, brief or shared figure walkthroughs
-as the argument requires. Explain key concepts and the full argument.
+Translate core text and choose detailed, brief or shared explanations as needed.
+Explain key concepts, preserve figures and author findings, and connect the argument.
 ```
 
-Use a PDF you are entitled to provide. The default includes the core text, main figures, necessary knowledge cards and a closing assessment. Methods, algorithms or proofs that carry the main contribution are also core. Reproduction details, supplementary walkthroughs and quizzes can be requested separately. Missing source materials should be disclosed.
+Use a PDF you are entitled to provide. The default preserves author discussion and limitations, without a separate reader critique. Methods, algorithms or proofs carrying the main contribution remain core. Supplementary walkthroughs and reproduction details are optional.
 
 ### 3 · Open and read
 
-Open the static HTML in a browser for offline panel switching, zoom, concept lookup and highlighting. Reading does not require a local service. Notes are optional; use the local service only when you want to save questions to the paper project.
+Open the generated HTML in a browser for panel switching, zoom, cards and marks. Use the paper's local service when you want to persist project notes. [Setup and FAQ](docs/getting-started.en.md).
+
+## Release and scope
+
+**Current release: v2.5.** [Full changes (Chinese)](docs/v2.5-changes.md) · [Skill source](skills/paper-to-html-v2.5/SKILL.md) · [Version history](docs/versions.en.md).
+
+- Current focus: biomedical experimental papers. Only Codex is tested; other agents remain untested.
+- Source review is required; structural and interaction tests do not prove scientific accuracy or reader comprehension.
+- Assembly and local services use Python; PDF crops need PyMuPDF. Optional browser regressions require Node.js, Playwright and a browser.
+- Publication overwrites the stable latest file. Backup-count settings and history rotation are removed; existing notes, attachments and historical files are preserved.
 
 <details>
-<summary>Try the components without a model</summary>
+<summary>One measured creation run: time and tokens</summary>
 
-To try just the static reader, [download the synthetic English demo HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/en/paper-reading.html) and open it in a browser.
-
-Requires Python, but no OpenAI API key:
-
-```sh
-git clone https://github.com/BerryIcey/paper-to-html.git
-cd paper-to-html
-python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --root demo/en --port 18765
-```
-
-Open `http://127.0.0.1:18765/paper-reading.html` on the same machine. This is a temporary demo service; paper projects need a suitable independent background service.
+A v2.4 eCHROMA run on 2026-10-29 used gpt-6.1-sol / low, took about19minutes29seconds and recorded5,858,896 tokens, including5,668,096 cached input tokens. This is one observation including repeated context, not a fixed per-paper cost or an API bill. [Counting scope](docs/usage-observation.md).
 
 </details>
-
-## Optional tools · Notes and highlighting
-
-Notes keep questions for a later assistant session; they do not provide instant answers. Saving notes to a project requires a local service. Reading the paper does not require enabling notes.
-
-<details>
-<summary>Notes workflow, preview and persistence limits</summary>
-
-A good AI explanation helps in the moment. Weeks later, you may forget the reasoning, lose the right message in a long thread, and ask the same question again.
-
-**paper-to-html brings those explanations back to the paper.** Start with a readable guide, note what still confuses you, ask the assistant to address it in a later session, and retain the responses and any requested guide updates. Your paper project gradually holds your own questions, clarifications and reading notes—so reopening it also brings back where you got stuck and what helped.
-
-[![Open the notes panel and type a sample draft beside the current section](docs/images/live-reading-notes.webp)](https://berryicey.github.io/paper-to-html/#abstract)
-
-*The public guide's notes panel. Visitor drafts stay in the current browser.*
-
-The goal is fewer repeated explanations and less searching through chat history. It still supports ongoing questions: project notes save through the local service, and the assistant handles them in a later session; the webpage does not answer or update itself instantly.
-
-### Lookup and annotation tools
-
-Understanding the paper comes first. These tools support lookup, annotation and follow-up:
-
-| Tool | What it does |
-|---|---|
-| Legend and term colors | Explain webpage term categories and toggle their backgrounds; original figure colors are interpreted separately |
-| Highlighter | Explicitly enable highlighting and undo marks; term colors and personal highlights have independent controls |
-| Notes | Save text or screenshots in the local paper project for a later assistant session |
-
-[![Enable the highlighter, mark a passage and open the term color legend](docs/images/live-reading-tools.webp)](https://berryicey.github.io/paper-to-html/#abstract)
-
-Project notes require the local service. Browser drafts are a separate store, and saving a note does not trigger an instant GPT response. Zoom, panel switching and lookup return also support reading.
-
-</details>
-
-## Example provenance and creation record
-
-<details>
-<summary>Example provenance, article license and static-site capabilities</summary>
-
-The public example reuses an existing Chinese guide with the original text, translation, figure explanations, 47 concept cards and an argument chain. It is not a newly generated v2.4 benchmark. The source article is CC BY 4.0; [attribution and adaptations](THIRD_PARTY_NOTICES.md) are documented. Visitors can highlight text and keep drafts in their browser. The static site cannot save notes to the author's project, and no private notes or attachments are published.
-
-</details>
-
-<details>
-<summary>One measured creation run: time and tokens, not a fixed per-paper cost</summary>
-
-One **measured v2.4 guide-creation run** (2026-10-29, the eCHROMA paper) used **gpt-6.1-sol / low**, took about **19 minutes 29 seconds** to create the guide, and recorded **5,858,896 tokens**: **5,668,096 cached input**, **144,845 uncached input**, and **45,955 output**. This is a single guide-creation observation including repeated context across calls, not a fixed per-paper cost, an API bill, or the creation cost of the hosted example. [Full record and counting scope](docs/usage-observation.md).
-
-</details>
-
-## Current release
-
-**v2.4: Darwin-assisted acceptance workflow; no new features or additional manual optimization.** Independent paired review and user confirmation were included. This supports modest workflow clarity, not demonstrated gains in whole-paper accuracy or comprehension.
-
-[v2.4 notes](docs/latest-changes.en.md) · [Version history](docs/versions.en.md) · [Setup FAQ](docs/getting-started.en.md). v2.3 and older packages remain available. This presentation update does not alter the v2.4 archive.
-
-## Practical limits
-
-- **Environment:** A Skill-capable assistant with PDF access; Python for components and services, PyMuPDF for figure crops, and Node.js for JavaScript checks. Optional browser regression tests require Playwright and an installed browser.
-- **Citation display:** Remove bibliographic number markers from source text, translations, captions and explanations; preserve figure references, quantities, units and scientific superscripts. Keep provenance in the source ledger and original paper.
-- **Review:** Translations, labels, numbers and inferences need source checks. Passing tests does not establish scientific accuracy, comprehension or coverage of every discipline. Only Codex is tested as an agent; other agents are untested.
-- **Persistence:** Project notes need the local service. Automatic offline retry, cross-device sync and instant model responses are not implemented.
-- **Access:** `127.0.0.1` is local to each device. Offline reading on a phone does not connect it to a computer's loopback server.
-- **Versions and background services:** Projects can keep zero, one or two historical copies in addition to the latest. Background startup differs by operating system; actual restart survival requires separate verification.
 
 ## Feedback and contributions
 
-[Report an issue](https://github.com/BerryIcey/paper-to-html/issues) with the version, browser, expected and observed behavior. For explanation problems, identify the object, comparison or inference that remains unclear.
+[Report an issue](https://github.com/BerryIcey/paper-to-html/issues) with your version, browser and expected/observed behavior. For unclear teaching, identify the object, comparison or inference. Do not upload private notes, credentials or paper full texts without permission.
 
-Current priorities: missed specialist concepts, excessive basic explanations, consistent quality across long papers, touch interaction and different forms of argument. Do not upload private notes, credentials or paper full texts without permission.
-
-Code and general documentation use the [MIT license](LICENSE). Papers and third-party images retain their applicable rights; the public case is shared under its separate license; see [third-party notices](THIRD_PARTY_NOTICES.md). Private notes are not published.
-
-If useful, **Star** the repository to find it again. Specific feedback on an unclear object, comparison or inference helps improve it.
-
-[Contribution guide](CONTRIBUTING.md) · [Suggest an improvement](https://github.com/BerryIcey/paper-to-html/issues/new?template=feature_request.md)
-
-[![Component checks](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/BerryIcey/paper-to-html/actions/workflows/validate.yml) · [MIT](LICENSE)
+Code and general documentation use the[MIT license](LICENSE). Papers and third-party images retain their own rights. [Contributing](CONTRIBUTING.md) · [Third-party notices](THIRD_PARTY_NOTICES.md).

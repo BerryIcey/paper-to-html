@@ -4,7 +4,7 @@
 
 ## Installation
 
-The full folder should contain `~/.codex/skills/paper-to-html-v2.4/SKILL.md` plus `agents/`, `references/`, `scripts/` and `assets/`. Copy the complete folder without an extra nesting level. Back up an existing installation outside discovery directories; confirm discovery on the next turn or in a new chat.
+The full folder should contain `~/.codex/skills/paper-to-html-v2.5/SKILL.md` plus `agents/`, `references/`, `scripts/` and `assets/`. Copy the complete folder without an extra nesting level. Back up an existing installation outside discovery directories; confirm discovery on the next turn or in a new chat.
 
 Dotted version names retain the existing convention. Generic validators may reject them. Only Codex has been tested; other agents have not been tested. Accepting SKILL.md does not prove execution compatibility.
 
@@ -24,7 +24,7 @@ A maintainer-reported previous run took about 50 minutes and used about 15% of a
 
 ## Verify a release
 
-Compare the ZIP's SHA-256 with the release `.sha256`. PowerShell: `Get-FileHash ./paper-to-html-v2.4.zip -Algorithm SHA256`. Linux: `sha256sum paper-to-html-v2.4.zip`. macOS: `shasum -a 256 paper-to-html-v2.4.zip`.
+Compare the ZIP's SHA-256 with the release `.sha256`. PowerShell: `Get-FileHash ./paper-to-html-v2.5.zip -Algorithm SHA256`. Linux: `sha256sum paper-to-html-v2.5.zip`. macOS: `shasum -a 256 paper-to-html-v2.5.zip`.
 
 ## Report a problem
 
