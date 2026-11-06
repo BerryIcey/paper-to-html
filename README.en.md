@@ -4,7 +4,11 @@
 
 # paper-to-html
 
-Original text, Chinese explanations, figure walkthroughs and concept cards in one webpage.
+**Understand it today. Find it again next time.**
+
+For readers who revisit papers in depth: keep AI figure walkthroughs, concept explanations and reasoning beside the paper.
+
+![Paper PDF → AI figure and concept explanations → reusable Chinese reading guide](docs/images/overview-flow-en.svg)
 
 [![Open live preview](docs/images/live-preview-en.svg)](https://berryicey.github.io/paper-to-html/)
 
@@ -14,7 +18,9 @@ Original text, Chinese explanations, figure walkthroughs and concept cards in on
 
 [![Switch figure panels with synchronized explanations](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
-*The top preview is an existing Chinese guide to Mulet-Lazaro et al. (2024); click to explore. The current Skill download is v2.5. [Attribution and license](THIRD_PARTY_NOTICES.md).*
+Example: a Chinese guide to Mulet-Lazaro et al. (2024). [Attribution and license](THIRD_PARTY_NOTICES.md).
+
+This example predates v2.5 and was not regenerated with it. The current downloadable Skill is **v2.5**.
 
 A Chinese-first Codex Skill, currently focused on biomedical experimental papers. Creating a guide needs an assistant with PDF access; the static reader works offline.
 
@@ -68,11 +74,11 @@ Connect figures to the paper's questions rather than listing their titles. Expla
 
 | 🔎 Lookup and navigation | 🖍️ Marks and colors | 📝 Notes (optional) |
 |---|---|---|
-| Figure navigation, panel switching, zoom/pan and exact lookup return | Enable highlighting, undo marks; term colors are independent | Save text or screenshots at the reading position for a later assistant session |
-| Static browser reading | Offline reading and local marks | Project persistence needs the local service; no instant model response |
+| Figure navigation, panel switching, zoom/pan and exact lookup return | Enable highlighting, undo marks; term colors are independent | Save text or screenshots in this paper’s local folder for a later assistant session |
+| Static browser reading | Offline reading and local marks | Writing notes to that folder needs the local service; no instant model response |
 
 > [!NOTE]
-> Browser drafts and project notes are separate. Automatic offline retry and cross-device sync are not implemented.
+> Browser drafts are separate from notes saved in the paper’s local folder. Automatic offline retry and cross-device sync are not implemented.
 
 ## Start in three steps
 
@@ -95,7 +101,7 @@ Use a PDF you are entitled to provide. The default preserves author discussion a
 
 ### 3 · Open and read
 
-Open the generated HTML in a browser for panel switching, zoom, cards and marks. Use the paper's local service when you want to persist project notes. [Setup and FAQ](docs/getting-started.en.md).
+Open the generated HTML in a browser for panel switching, zoom, cards and marks. Use the paper's local service when you want to save notes in this paper’s local folder. [Setup and FAQ](docs/getting-started.en.md).
 
 ## Release and scope
 
