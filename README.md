@@ -38,7 +38,7 @@ Mulet-Lazaro 等（2024） · 无需安装，直接打开中文共读网页
 
 **paper-to-html 想省下的，就是这部分重复。** 先把论文整理成带原文、翻译、图解和知识卡的网页；读到不懂的地方，就在对应内容旁留下随手记。下一轮让助手处理疑问，按需补充网页讲解并保留处理回复，逐渐积累属于自己的问题、理解与阅读笔记。
 
-[![公开案例的随手记面板，显示当前阅读章节和问题列表](docs/images/live-reading-notes.jpg)](https://berryicey.github.io/paper-to-html/#abstract)
+[![打开随手记，在当前阅读章节旁输入一条示例草稿](docs/images/live-reading-notes.webp)](https://berryicey.github.io/paper-to-html/#abstract)
 
 *公开案例的随手记面板。访客草稿留在当前浏览器。*
 
@@ -96,7 +96,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 <summary>展开详细讲解与真实网页预览</summary>
 
 
-下方截图和动图均来自上面的公开论文案例。
+下方动图均来自上面的公开论文案例。
 
 ### 01 · 逐图带你读：从“看见图”到“读出证据”
 
@@ -106,7 +106,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 
 因此读者得到的不是一句“结果显著”，而是一条能复述的理解过程。图注、译文、简短结论和详细解释分别保留；图解不能只复述图注，也不能用通用提醒代替实际读图。
 
-[![图 1a 的原图、图注、中文译读和解释](docs/images/live-paper-preview.jpg)](https://berryicey.github.io/paper-to-html/#results-figure-1)
+[![打开并放大图 1a，再回到图注和中文译读](docs/images/live-figure-zoom.webp)](https://berryicey.github.io/paper-to-html/#results-figure-1)
 
 
 ### 02 · 术语知识卡：补足理解，不打断阅读
@@ -126,7 +126,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 
 它不是把图标题排成目录，也不是把术语用箭头串起来。并行证据、没有支持预期的结果、补充验证和尚未解决的分支都应保留；研究顺序不能直接写成事件发生顺序或因果关系。
 
-[![公开案例的全文论证链，按研究问题串起每一步证据](docs/images/live-argument-chain.jpg)](https://berryicey.github.io/paper-to-html/#story)
+[![滚动阅读全文论证链，看到两条证据支线如何汇合](docs/images/live-argument-chain.webp)](https://berryicey.github.io/paper-to-html/#story)
 
 
 [下载演示 HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/paper-reading.html)，保存后用浏览器打开。GitHub 的 HTML 文件页只显示源码。这个项目是供 Codex 使用的 **Skill 与网页阅读组件**，生成解释需要核对当前论文来源。
@@ -158,7 +158,7 @@ python skills/paper-to-html-v2.4/assets/reader-components/reading_server.py --ro
 | 荧光笔 | 主动开启后标记文字，支持撤销；个人标黄与术语颜色开关独立 |
 | 随手记 | 在侧边记录文字或截图，保存到本地项目，留给下一轮助手处理 |
 
-[![公开案例的荧光标注与术语配色图例](docs/images/live-reading-tools.jpg)](https://berryicey.github.io/paper-to-html/#abstract)
+[![开启荧光笔、拖动标注正文，再展开术语配色图例](docs/images/live-reading-tools.webp)](https://berryicey.github.io/paper-to-html/#abstract)
 
 随手记需要本地阅读服务，静态文件中的草稿不等于已写入项目；保存问题不会即时触发 GPT。图像放大、面板切换和临时查阅返回也可辅助阅读。
 

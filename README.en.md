@@ -38,7 +38,7 @@ A good AI explanation helps in the moment. Weeks later, you may forget the reaso
 
 **paper-to-html brings those explanations back to the paper.** Start with a readable guide, note what still confuses you, ask the assistant to address it in a later session, and retain the responses and any requested guide updates. Your paper project gradually holds your own questions, clarifications and reading notes—so reopening it also brings back where you got stuck and what helped.
 
-[![Notes panel in the public guide with the current section and question list](docs/images/live-reading-notes.jpg)](https://berryicey.github.io/paper-to-html/#abstract)
+[![Open the notes panel and type a sample draft beside the current section](docs/images/live-reading-notes.webp)](https://berryicey.github.io/paper-to-html/#abstract)
 
 *The public guide's notes panel. Visitor drafts stay in the current browser.*
 
@@ -96,7 +96,7 @@ Open `http://127.0.0.1:18765/paper-reading.html` on the same machine. This is a 
 <summary>See detailed walkthroughs and previews from the live reader</summary>
 
 
-The screenshots and animations below come from the public Chinese reading guide above.
+The animations below come from the public Chinese reading guide above.
 
 ### 01 · Figure walkthroughs: read the evidence step by step
 
@@ -106,7 +106,7 @@ A walkthrough starts with **why this comparison is needed, who or what is compar
 
 This goes beyond a caption or “significant difference.” Captions, translations, short findings and detailed explanations have different roles. The reader should be able to reconstruct the comparison and inference.
 
-[![Figure 1a beside its original caption, Chinese translation and explanation](docs/images/live-paper-preview.jpg)](https://berryicey.github.io/paper-to-html/#results-figure-1)
+[![Open and zoom Figure 1a, then return to its caption and Chinese translation](docs/images/live-figure-zoom.webp)](https://berryicey.github.io/paper-to-html/#results-figure-1)
 
 
 ### 02 · Knowledge cards: clarify a concept and keep your place
@@ -126,7 +126,7 @@ Knowing each figure is not enough to understand the whole paper. The argument ma
 
 It is not a list of figure titles or a chain of unexplained terms. Parallel evidence, negative findings, supporting checks and open branches should remain visible. Research order alone does not establish chronology or causation.
 
-[![Argument map in the public guide, connecting each step of evidence to a research question](docs/images/live-argument-chain.jpg)](https://berryicey.github.io/paper-to-html/#story)
+[![Scroll through the argument map to see how two lines of evidence converge](docs/images/live-argument-chain.webp)](https://berryicey.github.io/paper-to-html/#story)
 
 
 [Download the English demo HTML](https://raw.githubusercontent.com/BerryIcey/paper-to-html/main/demo/en/paper-reading.html), save it, and open it in a browser. GitHub's HTML file page displays source code. This repository provides a **Codex Skill and reader components**; generated explanations still need source review.
@@ -158,7 +158,7 @@ Understanding the paper comes first. These tools support lookup, annotation and 
 | Highlighter | Explicitly enable highlighting and undo marks; term colors and personal highlights have independent controls |
 | Notes | Save text or screenshots in the local paper project for a later assistant session |
 
-[![Text highlighting and the term color legend in the public guide](docs/images/live-reading-tools.jpg)](https://berryicey.github.io/paper-to-html/#abstract)
+[![Enable the highlighter, mark a passage and open the term color legend](docs/images/live-reading-tools.webp)](https://berryicey.github.io/paper-to-html/#abstract)
 
 Project notes require the local service. Browser drafts are a separate store, and saving a note does not trigger an instant GPT response. Zoom, panel switching and lookup return also support reading.
 
