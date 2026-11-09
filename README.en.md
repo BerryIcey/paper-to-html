@@ -18,8 +18,6 @@ For readers who revisit papers in depth, paper-to-html keeps AI figure walkthrou
 
 Example: a Chinese guide to Mulet-Lazaro et al. (2024). [Attribution and license](THIRD_PARTY_NOTICES.md).
 
-This example predates v2.5 and was not regenerated with it. The current downloadable Skill is **v2.5**.
-
 A Chinese-first Codex Skill, currently focused on biomedical experimental papers. Creating a guide needs an assistant with PDF access; the static reader works offline.
 
 **Explore:** [Figures](#figure-walkthroughs) · [Concepts](#concept-cards) · [Argument](#the-full-argument) · [Reading tools](#reading-tools) · [Get started](#start-in-three-steps)

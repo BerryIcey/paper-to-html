@@ -20,7 +20,7 @@ Keep the demo terminal running and stop it with Ctrl+C. If the port is occupied,
 
 ## Time and cost
 
-A maintainer-reported previous run took about 50 minutes and used about 15% of a Plus account weekly allowance; see the [single-run record](usage-observation.md). No standardized runtime or token/cost benchmark has been published. Page count, figures, PDF quality, missing sources and model choice affect the work. Source-checked guides are not promised as one-click conversion.
+Two measured creation runs are available: about 19 minutes 29 seconds for eCHROMA / v2.4 and 41 minutes 44 seconds for NFE2 redox / v2.5; see the [records and counting scope](usage-observation.md). These observations apply to specific papers and environments, rather than a fixed per-paper runtime or a standardized token/cost benchmark. Cumulative tokens include repeated context across calls and cannot be directly converted into API charges or a percentage of an account's weekly allowance. Page count, figures, PDF quality, missing sources and model choice affect the work. Source-checked guides are not promised as one-click conversion.
 
 ## Verify a release
 
