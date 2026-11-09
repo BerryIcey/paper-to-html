@@ -119,9 +119,14 @@ Open the generated HTML in a browser for panel switching, zoom, cards and marks.
 - Publication overwrites the stable latest file. Backup-count settings and history rotation are removed; existing notes, attachments and historical files are preserved.
 
 <details>
-<summary>One measured creation run: time and tokens</summary>
+<summary>Measured creation runs: time and tokens</summary>
 
-A v2.4 eCHROMA run on 2026-10-29 used gpt-6.1-sol / low, took about19minutes29seconds and recorded5,858,896 tokens, including5,668,096 cached input tokens. This is one observation including repeated context, not a fixed per-paper cost or an API bill. [Counting scope](docs/usage-observation.md).
+| Date | Paper / Skill | Model / reasoning effort | Creation time | Total tokens | Cached input subset |
+|---|---|---|---|---:|---:|
+| 2026-10-29 | eCHROMA / v2.4 | gpt-6.1-sol / low | About 19 min 29 sec | 5,858,896 | 5,668,096 |
+| 2026-11-08 | NFE2 redox / v2.5 | gpt-6.1-sol / high | About 41 min 44 sec | 11,703,503 | 11,373,952 |
+
+These are two measured creation runs, including repeated context across calls, rather than a fixed per-paper cost or an API bill. [Full records and counting scope](docs/usage-observation.md).
 
 </details>
 
