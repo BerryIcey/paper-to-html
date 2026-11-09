@@ -4,13 +4,13 @@
 
 ## Installation
 
-The full folder should contain `~/.codex/skills/paper-to-html-v2.5/SKILL.md` plus `agents/`, `references/`, `scripts/` and `assets/`. Copy the complete folder without an extra nesting level. Back up an existing installation outside discovery directories; confirm discovery on the next turn or in a new chat.
+The full folder should contain `~/.codex/skills/paper-to-html-v2.5.1/SKILL.md` plus `agents/`, `references/`, `scripts/` and `assets/`. Copy the complete folder without an extra nesting level. Back up an existing installation outside discovery directories; confirm discovery on the next turn or in a new chat.
 
 Dotted version names retain the existing convention. Generic validators may reject them. Only Codex has been tested; other agents have not been tested. Accepting SKILL.md does not prove execution compatibility.
 
 ## Dependencies
 
-Opening a static reader needs neither Python nor a model key. Guide creation needs an assistant with PDF access. Assembly and the local service use Python; PDF crops need PyMuPDF. Optional browser regressions require Node.js, Playwright and a browser. Serving the demo does not generate paper explanations.
+The default deliverable is one desktop reader served by the paper’s local Python service; reading needs no model key. A separate offline copy is not generated, and phone/tablet adaptation and acceptance checks are optional. Guide creation needs an assistant with PDF access. Assembly and the local service use Python; PDF crops need PyMuPDF. Optional browser regressions require Node.js, Playwright and a browser. Serving the demo does not generate paper explanations.
 
 ## Notes and local access
 

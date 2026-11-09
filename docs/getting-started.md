@@ -4,13 +4,13 @@
 
 ## 安装目录
 
-完整目录应为 `~/.codex/skills/paper-to-html-v2.5/SKILL.md`，旁边保留 `agents/`、`references/`、`scripts/`、`assets/`。不要只复制 SKILL.md，也不要多套一层目录。已有安装先在技能目录外备份，下一轮或新聊天确认识别。
+完整目录应为 `~/.codex/skills/paper-to-html-v2.5.1/SKILL.md`，旁边保留 `agents/`、`references/`、`scripts/`、`assets/`。不要只复制 SKILL.md，也不要多套一层目录。已有安装先在技能目录外备份，下一轮或新聊天确认识别。
 
 名称沿用既有带点版本约定；通用名称校验器可能拒绝此格式。仅在 Codex 做过测试，其他 Agent 尚未测试，不把支持 SKILL.md 等同于已经兼容。
 
 ## 什么需要安装依赖？
 
-仅打开静态阅读页不需要 Python 或模型密钥。制作需要助手读取 PDF；组件装配和本地服务需要 Python，PDF 裁图需要 PyMuPDF；可选浏览器回归另需 Node.js、Playwright 与浏览器。演示服务只展示现有内容，不生成论文解释。
+默认交付一个桌面本地服务版，阅读时需要启动对应论文的 Python 本地服务，无需模型密钥；不另制作独立离线副本，手机／平板专项适配与验收按需进行。制作需要助手读取 PDF；组件装配和本地服务需要 Python，PDF 裁图需要 PyMuPDF；可选浏览器回归另需 Node.js、Playwright 与浏览器。演示服务只展示现有内容，不生成论文解释。
 
 ## 笔记为什么保存不了？
 

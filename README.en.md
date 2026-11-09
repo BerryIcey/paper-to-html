@@ -10,7 +10,7 @@ For readers who revisit papers in depth, paper-to-html keeps AI figure walkthrou
 
 [![Open live preview](docs/images/live-preview-en.svg)](https://berryicey.github.io/paper-to-html/)
 
-**[Download v2.5](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5/paper-to-html-v2.5.zip) · [Start](#start-in-three-steps) · [Release notes](docs/latest-changes.en.md)**
+**[Download v2.5.1](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.zip) · [Start](#start-in-three-steps) · [Release notes](docs/latest-changes.en.md)**
 
 </div>
 
@@ -18,7 +18,7 @@ For readers who revisit papers in depth, paper-to-html keeps AI figure walkthrou
 
 Example: a Chinese guide to Mulet-Lazaro et al. (2024). [Attribution and license](THIRD_PARTY_NOTICES.md).
 
-A Chinese-first Codex Skill, currently focused on biomedical experimental papers. Creating a guide needs an assistant with PDF access; the static reader works offline.
+A Chinese-first Codex Skill, currently focused on biomedical experimental papers. Creating a guide needs an assistant with PDF access; the default deliverable is one desktop reader served locally.
 
 **Explore:** [Figures](#figure-walkthroughs) · [Concepts](#concept-cards) · [Argument](#the-full-argument) · [Reading tools](#reading-tools) · [Get started](#start-in-three-steps)
 
@@ -79,23 +79,23 @@ Connect figures to the paper's questions rather than listing their titles. Expla
 | 🔎 Lookup and navigation | 🖍️ Marks and colors | 📝 Notes (optional) |
 |---|---|---|
 | Figure navigation, panel switching, zoom/pan and exact lookup return | Enable highlighting, undo marks; term colors are independent | Save text or screenshots in this paper’s local folder for a later assistant session |
-| Static browser reading | Offline reading and local marks | Writing notes to that folder needs the local service; no instant model response |
+| Desktop reading through the local service | Local marks | Writing notes to that folder needs the local service; no instant model response |
 
 > [!NOTE]
-> Browser drafts are separate from notes saved in the paper’s local folder. Automatic offline retry and cross-device sync are not implemented.
+> The default is one desktop reader served locally, without a separate offline copy. Browser drafts are separate from notes saved in the paper’s local folder. Automatic offline retry and cross-device sync are not implemented.
 
 ## Start in three steps
 
-### 1 · Install v2.5
+### 1 · Install v2.5.1
 
-[**Download paper-to-html-v2.5.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5/paper-to-html-v2.5.zip) · [SHA-256](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5/paper-to-html-v2.5.sha256)
+[**Download paper-to-html-v2.5.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.zip) · [SHA-256](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.sha256)
 
-Place the complete `paper-to-html-v2.5` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside discovery directories, then start a new chat to confirm discovery. Repository updates do not update installed copies automatically.
+Place the complete `paper-to-html-v2.5.1` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside discovery directories, then start a new chat to confirm discovery. Repository updates do not update installed copies automatically.
 
 ### 2 · Provide the paper
 
 ```text
-$paper-to-html-v2.5
+$paper-to-html-v2.5.1
 Create a Chinese HTML walkthrough of this paper.
 Translate core text and choose detailed, brief or shared explanations as needed.
 Explain key concepts, preserve figures and author findings, and connect the argument.
@@ -105,13 +105,14 @@ Use a PDF you are entitled to provide. The default preserves author discussion a
 
 ### 3 · Open and read
 
-Open the generated HTML in a browser for panel switching, zoom, cards and marks. Use the paper's local service when you want to save notes in this paper’s local folder. [Setup and FAQ](docs/getting-started.en.md).
+Start the paper's local service and open the delivered reading address in a desktop browser for panel switching, zoom, cards, marks and saved notes. A desktop shortcut can point to that same reader. [Setup and FAQ](docs/getting-started.en.md).
 
 ## Release and scope
 
-**Current release: v2.5.** [Full changes (Chinese)](docs/v2.5-changes.md) · [Skill source](skills/paper-to-html-v2.5/SKILL.md) · [Version history](docs/versions.en.md).
+**Current release: v2.5.** [Full changes (Chinese)](docs/v2.5.1-changes.md) · [Skill source](skills/paper-to-html-v2.5.1/SKILL.md) · [Version history](docs/versions.en.md).
 
 - Current focus: biomedical experimental papers. Only Codex is tested; other agents remain untested.
+- Create and maintain one desktop reader served locally, without a separate desktop offline HTML copy. Phone/tablet adaptation and acceptance checks are optional.
 - Source review is required; structural and interaction tests do not prove scientific accuracy or reader comprehension.
 - Assembly and local services use Python; PDF crops need PyMuPDF. Optional browser regressions require Node.js, Playwright and a browser.
 - Publication overwrites the stable latest file. Backup-count settings and history rotation are removed; existing notes, attachments and historical files are preserved.

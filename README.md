@@ -10,7 +10,7 @@
 
 [![在线预览真实论文](docs/images/live-preview-zh.svg)](https://berryicey.github.io/paper-to-html/)
 
-**[下载 v2.5](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5/paper-to-html-v2.5.zip)　·　[开始使用](#三步开始)　·　[更新说明](docs/latest-changes.md)**
+**[下载 v2.5.1](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.zip)　·　[开始使用](#三步开始)　·　[更新说明](docs/latest-changes.md)**
 
 </div>
 
@@ -18,7 +18,7 @@
 
 案例：Mulet-Lazaro 等（2024）的中文共读网页。[来源与许可](THIRD_PARTY_NOTICES.md)。
 
-供 Codex 使用的中文论文共读 Skill，当前重点是生物医学实验论文。制作需要能读取 PDF 的助手；生成的静态阅读页可离线打开。
+供 Codex 使用的中文论文共读 Skill，当前重点是生物医学实验论文。制作需要能读取 PDF 的助手；默认交付一个面向桌面的本地服务版。
 
 **功能导航：** [逐图带读](#逐图带读) · [知识卡](#知识卡) · [全文论证链](#全文论证链) · [阅读工具](#阅读工具) · [三步开始](#三步开始)
 
@@ -79,23 +79,23 @@
 | 🔎 查阅与定位 | 🖍️ 标记与配色 | 📝 随手记（可选） |
 |---|---|---|
 | 图号导航、整图/小图切换、图片缩放和平移、知识卡返回原处 | 主动开启荧光笔、撤销标记；术语颜色与个人标黄独立 | 在阅读位置记录文字或截图，保存到这篇论文的本地文件夹，下一轮由助手处理 |
-| 浏览器内即可阅读 | 支持离线阅读与本机标记 | 把笔记写入该文件夹需要本地服务；不即时调用模型 |
+| 桌面浏览器通过本地服务阅读 | 支持本机标记 | 把笔记写入该文件夹需要本地服务；不即时调用模型 |
 
 > [!NOTE]
-> 静态网页可离线读；浏览器草稿不等于已保存到论文文件夹的笔记。目前没有断线自动补存或跨设备同步。
+> 默认只交付一个桌面本地服务版，不另生成独立离线副本；浏览器草稿不等于已保存到论文文件夹的笔记。目前没有断线自动补存或跨设备同步。
 
 ## 三步开始
 
-### 1 · 安装 v2.5
+### 1 · 安装 v2.5.1
 
-[**下载 paper-to-html-v2.5.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5/paper-to-html-v2.5.zip) · [SHA-256校验](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5/paper-to-html-v2.5.sha256)
+[**下载 paper-to-html-v2.5.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.zip) · [SHA-256校验](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.sha256)
 
-解压后将完整 `paper-to-html-v2.5` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有安装先在技能目录外备份，新开聊天确认技能可用。GitHub 更新不会自动替换本机安装。
+解压后将完整 `paper-to-html-v2.5.1` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有安装先在技能目录外备份，新开聊天确认技能可用。GitHub 更新不会自动替换本机安装。
 
 ### 2 · 提供论文并调用
 
 ```text
-$paper-to-html-v2.5
+$paper-to-html-v2.5.1
 把这篇论文做成中文共读网页。
 完整翻译核心正文，按论证需要决定详讲、简讲和跨图比较。
 关键概念独立讲清，保留原图、作者结论和全文论证链。
@@ -105,13 +105,14 @@ $paper-to-html-v2.5
 
 ### 3 · 打开网页阅读
 
-浏览器直接打开生成的 HTML，即可切图、放大、查卡和标记。需要把随手记保存到这篇论文的本地文件夹时，再使用对应论文的本地服务。[安装与常见问题](docs/getting-started.md)
+启动对应论文的本地服务，在桌面浏览器打开交付的阅读地址，即可切图、放大、查卡、标记并保存随手记。桌面快捷方式可指向同一阅读入口。[安装与常见问题](docs/getting-started.md)
 
 ## 版本与使用范围
 
-**当前版本 v2.5**：[完整变更](docs/v2.5-changes.md) · [Skill 源文件](skills/paper-to-html-v2.5/SKILL.md) · [历史版本](docs/versions.md)
+**当前版本 v2.5.1**：[完整变更](docs/v2.5.1-changes.md) · [Skill 源文件](skills/paper-to-html-v2.5.1/SKILL.md) · [历史版本](docs/versions.md)
 
 - 当前重点为生物医学实验论文；仅在 Codex 测试，其他 Agent 尚未测试。
+- 默认只制作和维护一个桌面本地服务版，不另交付桌面离线 HTML 副本；手机／平板专项适配和验收按需另做。
 - 图文解释需要逐源核对；结构或交互测试通过不证明所有科学解释正确，也不证明读者已经理解。
 - 组件装配和本地服务使用 Python，PDF 裁图需要 PyMuPDF；可选浏览器回归另需 Node.js、Playwright及浏览器。
 - 默认覆盖固定同名最新版，不再提供备份数量选择或历史轮转；既有笔记、附件和历史资料不自动删除。
