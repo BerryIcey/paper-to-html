@@ -10,17 +10,19 @@ For readers who revisit papers in depth, paper-to-html keeps AI figure walkthrou
 
 [![Open live preview](docs/images/live-preview-en.svg)](https://berryicey.github.io/paper-to-html/)
 
-**[Download v2.5.1](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.zip) · [Start](#start-in-three-steps) · [Release notes](docs/latest-changes.en.md)**
+**[Download v2.5.1](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.1.zip) · [Start](#start-in-three-steps) · [Release notes](docs/latest-changes.en.md)**
 
 </div>
 
-## Install with one sentence
+## Install with one command
 
-Copy this sentence into Codex:
+Requires Node.js 22.20+ and Git. Run in your terminal:
 
-```text
-Please install the latest official release of the Skill from https://github.com/BerryIcey/paper-to-html, backing up any existing version with the same name first.
+```bash
+npx -y skills add BerryIcey/paper-to-html --skill paper-to-html-v2.5.1 -a codex -g -y
 ```
+
+Start a new Codex chat and invoke `$paper-to-html-v2.5.1`. Back up an existing installation with the same name first.
 
 [![Switch figure panels with synchronized explanations](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
@@ -93,7 +95,7 @@ Connect figures to the paper's questions rather than listing their titles. Expla
 
 ### 1 · Install v2.5.1
 
-[**Download paper-to-html-v2.5.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.zip) · [SHA-256](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.sha256)
+[**Download paper-to-html-v2.5.1.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.1.zip) · [SHA-256](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.1.sha256)
 
 Place the complete `paper-to-html-v2.5.1` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside discovery directories, then start a new chat to confirm discovery. Repository updates do not update installed copies automatically.
 
