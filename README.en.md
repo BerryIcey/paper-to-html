@@ -14,6 +14,14 @@ For readers who revisit papers in depth, paper-to-html keeps AI figure walkthrou
 
 </div>
 
+## Install with one sentence
+
+Copy this sentence into Codex:
+
+```text
+Please install the latest official release of the Skill from https://github.com/BerryIcey/paper-to-html, backing up any existing version with the same name first.
+```
+
 [![Switch figure panels with synchronized explanations](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
 Example: a Chinese guide to Mulet-Lazaro et al. (2024). [Attribution and license](THIRD_PARTY_NOTICES.md).
@@ -80,9 +88,6 @@ Connect figures to the paper's questions rather than listing their titles. Expla
 |---|---|---|
 | Figure navigation, panel switching, zoom/pan and exact lookup return | Enable highlighting, undo marks; term colors are independent | Save text or screenshots in this paper’s local folder for a later assistant session |
 | Desktop reading through the local service | Local marks | Writing notes to that folder needs the local service; no instant model response |
-
-> [!NOTE]
-> The default is one desktop reader served locally, without a separate offline copy. Browser drafts are separate from notes saved in the paper’s local folder. Automatic offline retry and cross-device sync are not implemented.
 
 ## Start in three steps
 
