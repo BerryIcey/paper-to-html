@@ -11,7 +11,7 @@ For readers who revisit papers in depth, paper-to-html keeps AI figure walkthrou
 
 [![Open live preview](docs/images/live-preview-en.svg)](https://berryicey.github.io/paper-to-html/)
 
-**[Download v2.5.1](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.1.zip) · [Start](#start-in-three-steps) · [Release notes](docs/latest-changes.en.md)**
+**[Download v2.6](https://github.com/BerryIcey/paper-to-html/releases/download/v2.6/paper-to-html-v2.6.zip) · [Start](#start-in-three-steps) · [Release notes](docs/latest-changes.en.md)**
 
 </div>
 
@@ -20,10 +20,10 @@ For readers who revisit papers in depth, paper-to-html keeps AI figure walkthrou
 Run in your terminal:
 
 ```bash
-npx -y skills add BerryIcey/paper-to-html --skill paper-to-html-v2.5.1 -a codex -g -y
+npx -y skills add BerryIcey/paper-to-html --skill paper-to-html-v2.6 -a codex -g -y
 ```
 
-Invoke `$paper-to-html-v2.5.1`.
+Invoke `$paper-to-html-v2.6`.
 
 [![Switch figure panels with synchronized explanations](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
@@ -92,16 +92,16 @@ Connect figures to the paper's questions rather than listing their titles. Expla
 
 ## Start in three steps
 
-### 1 · Install v2.5.1
+### 1 · Install v2.6
 
-[**Download paper-to-html-v2.5.1.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.1.zip) · [SHA-256](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.1.sha256)
+[**Download paper-to-html-v2.6.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.6/paper-to-html-v2.6.zip) · [SHA-256](https://github.com/BerryIcey/paper-to-html/releases/download/v2.6/paper-to-html-v2.6.sha256)
 
-Place the complete `paper-to-html-v2.5.1` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside discovery directories, then start a new chat to confirm discovery. Repository updates do not update installed copies automatically.
+Place the complete `paper-to-html-v2.6` folder in your configured Codex Skill directory, commonly `~/.codex/skills/`. Back up an existing installation outside discovery directories, then start a new chat to confirm discovery. Repository updates do not update installed copies automatically.
 
 ### 2 · Provide the paper
 
 ```text
-$paper-to-html-v2.5.1
+$paper-to-html-v2.6
 Create a Chinese HTML walkthrough of this paper.
 Translate core text and choose detailed, brief or shared explanations as needed.
 Explain key concepts, preserve figures and author findings, and connect the argument.
@@ -115,7 +115,7 @@ Start the paper's local service and open the delivered reading address in a desk
 
 ## Release and scope
 
-**Current release: v2.5.** [Full changes (Chinese)](docs/v2.5.1-changes.md) · [Skill source](skills/paper-to-html-v2.5.1/SKILL.md) · [Version history](docs/versions.en.md).
+**Current release: v2.6.** [Full changes (Chinese)](docs/v2.6-changes.md) · [Skill source](skills/paper-to-html-v2.6/SKILL.md) · [Version history](docs/versions.en.md).
 
 - Current focus: biomedical experimental papers. Only Codex is tested; other agents remain untested.
 - Create and maintain one desktop reader served locally, without a separate desktop offline HTML copy. Phone/tablet adaptation and acceptance checks are optional.

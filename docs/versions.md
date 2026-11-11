@@ -2,7 +2,8 @@
 
 | 版本 | 状态 | 内容与入口 |
 |---|---|---|
-| **v2.5.1** | **Latest / 最新推荐** | [Download](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.5.1) · [Report](v2.5.1-changes.md) |
+| **v2.6** | **Latest / 最新推荐** | [Download](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.6) · [Report](v2.6-changes.md) |
+| v2.5.1 | Rollback / 保留回滚 | [Download](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.5.1) · [Report](v2.5.1-changes.md) |
 | v2.5 | 历史版 · 保留 | [Download](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.5) · [Report](v2.5-changes.md) |
 | **v2.4** | 历史版 · 保留 | [下载](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.4) · [更新报告](v2.4-changes.md)：Darwin 辅助优化验收流程；无新增功能、无额外人工优化 |
 | v2.3 | 优化前基线 · 保留原包 | [下载](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.3) · [更新报告](v2.3-changes.md) |
@@ -11,6 +12,6 @@
 | v2.0.2 | 历史版 | [查看快照](https://github.com/BerryIcey/paper-to-html/tree/v2.0.2) · [早期变更](v2-changes.md) |
 | v1.0.0 | 原始版 | [查看快照](https://github.com/BerryIcey/paper-to-html/tree/v1.0.0)，用于对照和回退 |
 
-**v2.5.1 为当前推荐版。** v2.3 及更早版本的原始下载包和历史标签继续保留。Skill 版本与某篇论文网页自己的版本号分别管理。
+**v2.6 为当前推荐版，v2.5.1保留用于回滚。** v2.3 及更早版本的原始下载包和历史标签继续保留。Skill 版本与某篇论文网页自己的版本号分别管理。
 
 [v2.4 校验文件](https://github.com/BerryIcey/paper-to-html/releases/download/v2.4/paper-to-html-v2.4.sha256) · [版本差异](https://github.com/BerryIcey/paper-to-html/compare/v2.3...v2.4)。不要混用不同版本的参考文件。[个人 Skill 库](https://github.com/BerryIcey/my-skills)保留项目入口。

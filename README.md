@@ -11,7 +11,7 @@
 
 [![在线预览真实论文](docs/images/live-preview-zh.svg)](https://berryicey.github.io/paper-to-html/)
 
-**[下载 v2.5.1](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.1.zip)　·　[开始使用](#三步开始)　·　[更新说明](docs/latest-changes.md)**
+**[下载 v2.6](https://github.com/BerryIcey/paper-to-html/releases/download/v2.6/paper-to-html-v2.6.zip)　·　[开始使用](#三步开始)　·　[更新说明](docs/latest-changes.md)**
 
 </div>
 
@@ -20,10 +20,10 @@
 在终端执行：
 
 ```bash
-npx -y skills add BerryIcey/paper-to-html --skill paper-to-html-v2.5.1 -a codex -g -y
+npx -y skills add BerryIcey/paper-to-html --skill paper-to-html-v2.6 -a codex -g -y
 ```
 
-使用 `$paper-to-html-v2.5.1` 调用。
+使用 `$paper-to-html-v2.6` 调用。
 
 [![真实论文共读：切换小图时原图与译读同步更新](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
@@ -92,16 +92,16 @@ npx -y skills add BerryIcey/paper-to-html --skill paper-to-html-v2.5.1 -a codex 
 
 ## 三步开始
 
-### 1 · 安装 v2.5.1
+### 1 · 安装 v2.6
 
-[**下载 paper-to-html-v2.5.1.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.1.zip) · [SHA-256校验](https://github.com/BerryIcey/paper-to-html/releases/download/v2.5.1/paper-to-html-v2.5.1.sha256)
+[**下载 paper-to-html-v2.6.zip**](https://github.com/BerryIcey/paper-to-html/releases/download/v2.6/paper-to-html-v2.6.zip) · [SHA-256校验](https://github.com/BerryIcey/paper-to-html/releases/download/v2.6/paper-to-html-v2.6.sha256)
 
-解压后将完整 `paper-to-html-v2.5.1` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有安装先在技能目录外备份，新开聊天确认技能可用。GitHub 更新不会自动替换本机安装。
+解压后将完整 `paper-to-html-v2.6` 文件夹放进当前设备的 Codex Skill 目录，通常是 `~/.codex/skills/`。已有安装先在技能目录外备份，新开聊天确认技能可用。GitHub 更新不会自动替换本机安装。
 
 ### 2 · 提供论文并调用
 
 ```text
-$paper-to-html-v2.5.1
+$paper-to-html-v2.6
 把这篇论文做成中文共读网页。
 完整翻译核心正文，按论证需要决定详讲、简讲和跨图比较。
 关键概念独立讲清，保留原图、作者结论和全文论证链。
@@ -115,7 +115,7 @@ $paper-to-html-v2.5.1
 
 ## 版本与使用范围
 
-**当前版本 v2.5.1**：[完整变更](docs/v2.5.1-changes.md) · [Skill 源文件](skills/paper-to-html-v2.5.1/SKILL.md) · [历史版本](docs/versions.md)
+**当前版本 v2.6**：[完整变更](docs/v2.6-changes.md) · [Skill 源文件](skills/paper-to-html-v2.6/SKILL.md) · [历史版本](docs/versions.md)
 
 - 当前重点为生物医学实验论文；仅在 Codex 测试，其他 Agent 尚未测试。
 - 默认只制作和维护一个桌面本地服务版，不另交付桌面离线 HTML 副本；手机／平板专项适配和验收按需另做。

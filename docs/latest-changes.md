@@ -1,5 +1,5 @@
-# 最新版 · v2.5.1
+# 最新版 · v2.6
 
-默认只交付一个桌面本地服务版；不另生成独立离线副本，手机／平板专项适配与验收改为按需。保留既有动图，移除首页旧版生成提示，并统一 FAQ 的实测耗时和用量口径。
+按证据任务组合简洁读图讲解，逐项选择解释深度；保留图注、概述与作者判断，增加定稿到HTML的内容保真校验。
 
-[完整更新报告](v2.5.1-changes.md) · [下载 v2.5.1](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.5.1)
+[完整更新报告](v2.6-changes.md) · [下载v2.6](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.6)

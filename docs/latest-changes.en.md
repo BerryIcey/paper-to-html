@@ -1,5 +1,5 @@
-# Latest release · v2.5.1
+# Latest release · v2.6
 
-Deliver one desktop reader served locally, without a separate offline copy. Phone/tablet adaptation and acceptance checks are optional. Existing animations are retained; old-version preview labels are removed, and the FAQ now uses the measured time and token records consistently.
+Compose concise figure walkthroughs by evidential role, choose depth per item, and preserve captions, overviews and author findings. Approved-content baselines guard HTML assembly against content loss.
 
-[Full report (Chinese)](v2.5.1-changes.md) · [Download v2.5.1](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.5.1)
+[Full report](v2.6-changes.en.md) · [Download v2.6](https://github.com/BerryIcey/paper-to-html/releases/tag/v2.6)

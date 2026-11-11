@@ -11,8 +11,8 @@ Explain the problem, expected behavior and a minimal reproduction. Discuss subst
 CI uses Python 3.11 and Node.js:
 
 ```sh
-node --check skills/paper-to-html-v2.5.1/assets/reader-components/reader.js
-python -X utf8 -m unittest discover -s skills/paper-to-html-v2.5.1/scripts -p "test_*.py"
+node --check skills/paper-to-html-v2.6/assets/reader-components/reader.js
+python -X utf8 -m unittest discover -s skills/paper-to-html-v2.6/scripts -p "test_*.py"
 ```
 
 Optional browser regression: from the Skill directory run `node scripts/test_reader_accessibility.cjs` with Playwright and a browser. `PLAYWRIGHT_MODULE` and `READER_BROWSER_EXECUTABLE` support discovered local paths. Do not commit machine-specific paths. Component success is not whole-paper semantic acceptance.

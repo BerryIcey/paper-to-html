@@ -1,0 +1,4 @@
+interface:
+  display_name: "文献共读网页 v2.6"
+  short_description: "按证据任务组合简洁带读，逐项选择深度，保留作者判断并核对HTML内容保真"
+  default_prompt: "使用 $paper-to-html-v2.6 为我制作中文共读网页；保留图注及翻译、总结、作者的结果与判断，按当前证据组合简洁短块带读，优先作者讨论且图上可定位的例子，先定稿再核对HTML保真。"

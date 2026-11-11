@@ -4,7 +4,7 @@
 
 ## 安装目录
 
-完整目录应为 `~/.codex/skills/paper-to-html-v2.5.1/SKILL.md`，旁边保留 `agents/`、`references/`、`scripts/`、`assets/`。不要只复制 SKILL.md，也不要多套一层目录。已有安装先在技能目录外备份，下一轮或新聊天确认识别。
+完整目录应为 `~/.codex/skills/paper-to-html-v2.6/SKILL.md`，旁边保留 `agents/`、`references/`、`scripts/`、`assets/`。不要只复制 SKILL.md，也不要多套一层目录。已有安装先在技能目录外备份，下一轮或新聊天确认识别。
 
 名称沿用既有带点版本约定；通用名称校验器可能拒绝此格式。仅在 Codex 做过测试，其他 Agent 尚未测试，不把支持 SKILL.md 等同于已经兼容。
 
@@ -24,7 +24,7 @@
 
 ## 校验下载包
 
-与 Release 的 `.sha256` 对照：PowerShell 使用 `Get-FileHash ./paper-to-html-v2.5.zip -Algorithm SHA256`；Linux 使用 `sha256sum paper-to-html-v2.5.zip`；macOS 使用 `shasum -a 256 paper-to-html-v2.5.zip`。
+与 Release 的 `.sha256` 对照：PowerShell 使用 `Get-FileHash ./paper-to-html-v2.6.zip -Algorithm SHA256`；Linux 使用 `sha256sum paper-to-html-v2.6.zip`；macOS 使用 `shasum -a 256 paper-to-html-v2.6.zip`。
 
 ## 怎样反馈讲解错误？
 

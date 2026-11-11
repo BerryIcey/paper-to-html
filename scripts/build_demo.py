@@ -2,7 +2,7 @@
 from pathlib import Path
 import sys,re,json,subprocess
 from html import escape
-ROOT=Path(__file__).resolve().parents[1];SKILL=ROOT/'skills/paper-to-html-v2.5.1'
+ROOT=Path(__file__).resolve().parents[1];SKILL=ROOT/'skills/paper-to-html-v2.6'
 sys.path.insert(0,str(SKILL/'scripts'))
 from teaching_contract import render_teaching
 
