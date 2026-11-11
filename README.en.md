@@ -4,6 +4,7 @@
 
 # paper-to-html
 
+An Agent Skill for guided reading of biology research papers.<br>
 For readers who revisit papers in depth, paper-to-html keeps AI figure walkthroughs, concept explanations and a guide to the paper’s argument alongside the original text.
 
 ![Give a paper PDF to an agent such as Codex. It runs paper-to-html and creates a guide covering figures and statistics, concepts and methods, and the paper’s argument.](docs/images/overview-flow-en.svg)
@@ -27,8 +28,6 @@ Start a new Codex chat and invoke `$paper-to-html-v2.5.1`. Back up an existing i
 [![Switch figure panels with synchronized explanations](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
 Example: a Chinese guide to Mulet-Lazaro et al. (2024). [Attribution and license](THIRD_PARTY_NOTICES.md).
-
-A Chinese-first Codex Skill, currently focused on biomedical experimental papers. Creating a guide needs an assistant with PDF access; the default deliverable is one desktop reader served locally.
 
 **Explore:** [Figures](#figure-walkthroughs) · [Concepts](#concept-cards) · [Argument](#the-full-argument) · [Reading tools](#reading-tools) · [Get started](#start-in-three-steps)
 

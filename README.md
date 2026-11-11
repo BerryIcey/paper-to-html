@@ -4,6 +4,7 @@
 
 # paper-to-html
 
+供 Agent使用的生物领域相关论文带读 Skill。<br>
 为需要反复精读论文的读者，把 AI 的逐图讲解、概念解释和全文梳理留在论文旁。
 
 ![把论文 PDF 发给 Agent，例如 Codex。Agent 调用 paper-to-html，生成包含读图与统计、概念与方法和全文论证链的共读网页。](docs/images/overview-flow-zh.svg)
@@ -27,8 +28,6 @@ npx -y skills add BerryIcey/paper-to-html --skill paper-to-html-v2.5.1 -a codex 
 [![真实论文共读：切换小图时原图与译读同步更新](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
 案例：Mulet-Lazaro 等（2024）的中文共读网页。[来源与许可](THIRD_PARTY_NOTICES.md)。
-
-供 Codex 使用的中文论文共读 Skill，当前重点是生物医学实验论文。制作需要能读取 PDF 的助手；默认交付一个面向桌面的本地服务版。
 
 **功能导航：** [逐图带读](#逐图带读) · [知识卡](#知识卡) · [全文论证链](#全文论证链) · [阅读工具](#阅读工具) · [三步开始](#三步开始)
 
