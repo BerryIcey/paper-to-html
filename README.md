@@ -17,13 +17,13 @@
 
 ## 一行命令安装
 
-需 Node.js 22.20+ 和 Git，在终端执行：
+在终端执行：
 
 ```bash
 npx -y skills add BerryIcey/paper-to-html --skill paper-to-html-v2.5.1 -a codex -g -y
 ```
 
-安装后新开 Codex 聊天，使用 `$paper-to-html-v2.5.1` 调用；已有同名安装请先备份。
+使用 `$paper-to-html-v2.5.1` 调用。
 
 [![真实论文共读：切换小图时原图与译读同步更新](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 

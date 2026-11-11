@@ -17,13 +17,13 @@ For readers who revisit papers in depth, paper-to-html keeps AI figure walkthrou
 
 ## Install with one command
 
-Requires Node.js 22.20+ and Git. Run in your terminal:
+Run in your terminal:
 
 ```bash
 npx -y skills add BerryIcey/paper-to-html --skill paper-to-html-v2.5.1 -a codex -g -y
 ```
 
-Start a new Codex chat and invoke `$paper-to-html-v2.5.1`. Back up an existing installation with the same name first.
+Invoke `$paper-to-html-v2.5.1`.
 
 [![Switch figure panels with synchronized explanations](docs/images/live-figure-panels.webp)](https://berryicey.github.io/paper-to-html/)
 
